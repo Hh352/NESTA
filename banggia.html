@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Bảng giá Dịch vụ | NESTA SPA</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        .soft-shadow-l1 {
+            border: 1px solid #F4F4F4;
+        }
+
+        .soft-shadow-l2 {
+            border: 1px solid #F4F4F4;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        }
+
+        .soft-shadow-l3:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+            transform: translateY(-2px);
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #e3e2e2;
+            border-radius: 10px;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e3e2e2",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "on-secondary-fixed-variant": "#454747",
+                        "secondary-fixed": "#e2e2e2",
+                        "tertiary": "#000000",
+                        "on-surface": "#1b1c1c",
+                        "inverse-primary": "#c6c6c6",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f2f0f0",
+                        "surface-bright": "#fbf9f9",
+                        "surface-container-high": "#e9e8e7",
+                        "secondary-container": "#dfe0e0",
+                        "on-background": "#1b1c1c",
+                        "surface-container-highest": "#e3e2e2",
+                        "primary": "#000000",
+                        "surface-dim": "#dbdad9",
+                        "on-primary-fixed": "#1b1b1b",
+                        "outline": "#7e7576",
+                        "inverse-surface": "#303031",
+                        "surface-container": "#efeded",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#616363",
+                        "on-tertiary-container": "#838484",
+                        "on-primary-fixed-variant": "#474747",
+                        "on-primary-container": "#848484",
+                        "outline-variant": "#cfc4c5",
+                        "surface-container-low": "#f5f3f3",
+                        "background": "#fbf9f9",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#e2e2e2",
+                        "error": "#ba1a1a",
+                        "secondary": "#5d5f5f",
+                        "on-surface-variant": "#4c4546",
+                        "tertiary-container": "#1a1c1c",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "primary-container": "#1b1b1b",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#fbf9f9",
+                        "surface-tint": "#5e5e5e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "stack-sm": "8px",
+                        "container-padding-desktop": "64px",
+                        "gutter": "24px",
+                        "stack-md": "16px",
+                        "container-padding-mobile": "24px",
+                        "stack-lg": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Bitter"],
+                        "display-lg": ["Bitter"],
+                        "headline-lg-mobile": ["Bitter"],
+                        "label-sm": ["Bitter"],
+                        "headline-lg": ["Bitter"],
+                        "body-lg": ["Bitter"],
+                        "label-lg": ["Bitter"],
+                        "body-md": ["Bitter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden selection:bg-primary selection:text-on-primary">
+    <!-- Mobile Menu Checkbox Hack -->
+    <input type="checkbox" id="mobile-menu-toggle" class="hidden peer">
+    
+    <!-- Mobile Overlay -->
+    <label for="mobile-menu-toggle" class="fixed inset-0 bg-black/50 z-40 hidden peer-checked:block md:peer-checked:hidden cursor-pointer backdrop-blur-sm transition-opacity"></label>
+
+    <!-- Mobile Slidebar -->
+    <div class="fixed top-0 right-0 h-full w-64 bg-surface z-50 shadow-2xl transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 flex flex-col px-6 py-8 md:hidden">
+        <div class="flex justify-between items-center mb-12">
+            <span class="font-label-lg uppercase tracking-widest text-primary font-bold">Menu</span>
+            <label for="mobile-menu-toggle" class="cursor-pointer text-primary">
+                <span class="material-symbols-outlined text-[28px]">close</span>
+            </label>
+        </div>
+        <div class="flex flex-col gap-6">
+            <a href="trangchu.html" class="font-body-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors">Trang Chủ</a>
+            <a href="dichvu.html" class="font-body-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors">Dịch Vụ</a>
+            <a href="banggia.html" class="font-body-lg uppercase tracking-widest text-primary font-bold border-b border-primary pb-2 w-max">Bảng Giá</a>
+            <a href="quytrinh.html" class="font-body-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors">Quy Trình</a>
+            <a href="lienhe.html" class="font-body-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors">Liên Hệ</a>
+        </div>
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <nav class="bg-surface/80 backdrop-blur-md dark:bg-surface-container/80 fixed top-0 w-full z-30 border-b border-surface-variant dark:border-outline-variant/20 shadow-sm h-20">
+        <div class="flex justify-between items-center px-4 md:px-container-padding-desktop h-full max-w-[1280px] mx-auto gap-4">
+            <div class="flex items-center shrink-0 w-[120px] md:w-[160px]">
+                <a href="trangchu.html" class="block">
+                    <img src="images/logo.png" alt="NESTA SPA" class="h-16 md:h-20 w-auto object-contain scale-[1.3] origin-left">
+                </a>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex flex-1 justify-center gap-stack-lg items-center">
+                <a href="trangchu.html" class="font-body-md text-body-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300">Trang Chủ</a>
+                <a href="dichvu.html" class="font-body-md text-body-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300">Dịch Vụ</a>
+                <a href="banggia.html" class="font-body-md text-body-md uppercase tracking-widest text-primary font-bold border-b border-primary pb-1 transition-colors duration-300">Bảng Giá</a>
+                <a href="quytrinh.html" class="font-body-md text-body-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300">Quy Trình</a>
+                <a href="lienhe.html" class="font-body-md text-body-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300">Liên Hệ</a>
+            </div>
+            
+            <!-- Actions -->
+            <div class="flex items-center justify-end shrink-0 gap-4">
+                <a href="lienhe.html" class="bg-primary text-on-primary px-4 md:px-stack-lg py-2 md:py-3 rounded-full font-label-lg text-[10px] md:text-label-lg uppercase tracking-wider transition-transform duration-200 active:scale-90 text-center whitespace-nowrap">Đặt Lịch</a>
+                <!-- Hamburger Button for Mobile -->
+                <label for="mobile-menu-toggle" class="md:hidden cursor-pointer text-primary flex items-center">
+                    <span class="material-symbols-outlined text-[28px]">menu</span>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-32 pb-stack-lg px-gutter md:px-container-padding-desktop max-w-[1280px] mx-auto">
+        <!-- Hero Section -->
+        <header class="mb-stack-lg text-center md:text-left">
+            <h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-stack-sm">Bảng giá Dịch vụ</h1>
+            <p class="text-secondary max-w-2xl font-body-lg text-body-lg">Minh bạch trong từng trải nghiệm. Đưa nghệ
+                thuật chăm sóc sức khỏe thượng lưu về tận không gian sống của bạn.</p>
+        </header>
+        <!-- Pricing Categories: Bento Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-20">
+            <!-- Category: Massage & Bodywork -->
+            <div
+                class="md:col-span-8 bg-surface-container-lowest rounded-lg p-stack-lg soft-shadow-l2 transition-all duration-300 soft-shadow-l3">
+                <div class="flex justify-between items-end mb-stack-lg">
+                    <h2 class="font-headline-md text-headline-md">Liệu trình Massage</h2>
+                    <span class="text-label-sm font-label-sm uppercase tracking-widest text-secondary">Phổ biến
+                        nhất</span>
+                </div>
+                <div class="space-y-stack-md">
+                    <div
+                        class="group flex items-center justify-between p-stack-md rounded-lg hover:bg-surface-container transition-colors">
+                        <div>
+                            <h3 class="font-label-lg text-label-lg">Signature Nesta Massage</h3>
+                            <p class="text-label-sm text-secondary">60 phút / 90 phút</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="font-headline-md text-primary">1.200k</span>
+                            <div class="text-[10px] uppercase tracking-tighter text-secondary">VND</div>
+                        </div>
+                    </div>
+                    <div
+                        class="group flex items-center justify-between p-stack-md rounded-lg hover:bg-surface-container transition-colors">
+                        <div>
+                            <h3 class="font-label-lg text-label-lg">Đá nóng Thụy Điển</h3>
+                            <p class="text-label-sm text-secondary">90 phút</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="font-headline-md text-primary">1.500k</span>
+                            <div class="text-[10px] uppercase tracking-tighter text-secondary">VND</div>
+                        </div>
+                    </div>
+                    <div
+                        class="group flex items-center justify-between p-stack-md rounded-lg hover:bg-surface-container transition-colors">
+                        <div>
+                            <h3 class="font-label-lg text-label-lg">Trị liệu chuyên sâu</h3>
+                            <p class="text-label-sm text-secondary">75 phút</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="font-headline-md text-primary">1.350k</span>
+                            <div class="text-[10px] uppercase tracking-tighter text-secondary">VND</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Category: Facial -->
+            <div
+                class="md:col-span-4 bg-primary text-on-primary rounded-lg p-stack-lg shadow-xl flex flex-col justify-between">
+                <div>
+                    <h2 class="font-headline-md text-headline-md text-white mb-stack-lg">Chăm sóc Da mặt</h2>
+                    <div class="space-y-stack-md">
+                        <div class="border-b border-white/10 pb-stack-sm">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-label-lg">Hydra-Facial</span>
+                                <span class="font-bold">1.800k</span>
+                            </div>
+                            <p class="text-xs text-white/60">Cấp ẩm sâu &amp; phục hồi tế bào</p>
+                        </div>
+                        <div class="border-b border-white/10 pb-stack-sm">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-label-lg">Nesta Glow</span>
+                                <span class="font-bold">2.200k</span>
+                            </div>
+                            <p class="text-xs text-white/60">Làm sáng &amp; trẻ hóa chuyên sâu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-stack-lg">
+                    <button
+                        class="w-full py-4 bg-white text-primary rounded-full font-label-lg uppercase tracking-widest hover:bg-surface-container transition-colors">Tư
+                        vấn ngay</button>
+                </div>
+            </div>
+            <!-- Category: Special Packages -->
+            <div
+                class="md:col-span-4 bg-surface-container-low rounded-lg p-stack-lg soft-shadow-l2 soft-shadow-l3 transition-all duration-300">
+                <h2 class="font-headline-md text-headline-md mb-stack-lg">Gói Combo</h2>
+                <div class="space-y-stack-md">
+                    <div class="bg-white p-stack-md rounded-lg">
+                        <p class="font-label-lg mb-1">Nesta Couple</p>
+                        <p class="text-headline-md font-bold mb-2">3.500k</p>
+                        <p class="text-label-sm text-secondary">Dành cho 2 người, liệu trình 120 phút.</p>
+                    </div>
+                    <div class="bg-white p-stack-md rounded-lg">
+                        <p class="font-label-lg mb-1">Ultimate Detox</p>
+                        <p class="text-headline-md font-bold mb-2">2.800k</p>
+                        <p class="text-label-sm text-secondary">Thanh lọc toàn diện từ trong ra ngoài.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Info & Areas -->
+            <div class="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                <!-- Surcharges Section -->
+                <div
+                    class="bg-surface-container-lowest border border-surface-variant rounded-lg p-stack-lg flex flex-col">
+                    <h3
+                        class="font-label-lg text-label-lg uppercase tracking-widest mb-stack-md text-secondary flex items-center gap-2">
+                        <span class="material-symbols-outlined" data-icon="info">info</span> Phụ phí dịch vụ
+                    </h3>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span
+                            class="bg-surface-container px-4 py-2 rounded-full font-label-sm text-secondary border border-outline-variant/30">Lễ/Tết:
+                            +15%</span>
+                        <span
+                            class="bg-surface-container px-4 py-2 rounded-full font-label-sm text-secondary border border-outline-variant/30">Sau
+                            22h: +100k</span>
+                        <span
+                            class="bg-surface-container px-4 py-2 rounded-full font-label-sm text-secondary border border-outline-variant/30">Yêu
+                            cầu KTV: 50k</span>
+                    </div>
+                </div>
+                <!-- Service Areas Section -->
+                <div
+                    class="bg-surface-container-lowest border border-surface-variant rounded-lg p-stack-lg flex flex-col">
+                    <h3
+                        class="font-label-lg text-label-lg uppercase tracking-widest mb-stack-md text-secondary flex items-center gap-2">
+                        <span class="material-symbols-outlined" data-icon="location_on">location_on</span> Khu vực phục
+                        vụ
+                    </h3>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="bg-primary text-on-primary px-4 py-2 rounded-full font-label-sm">Quận 1</span>
+                        <span class="bg-primary text-on-primary px-4 py-2 rounded-full font-label-sm">Quận 3</span>
+                        <span class="bg-primary text-on-primary px-4 py-2 rounded-full font-label-sm">Quận 7</span>
+                        <span class="bg-primary text-on-primary px-4 py-2 rounded-full font-label-sm">Thủ Đức</span>
+                        <span
+                            class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full font-label-sm italic">Ngoại
+                            thành (Liên hệ)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Premium Imagery Section -->
+        <section class="relative h-[400px] rounded-lg overflow-hidden mb-20 group">
+            <img alt="Luxury Spa Treatment"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                data-alt="A serene close-up of a high-end luxury spa treatment room with soft warm lighting and a minimalist white aesthetic. The scene features a plush massage table with organic linen textures and a single white orchid in a ceramic vase. The atmosphere is quiet, expensive, and tranquil, utilizing a monochrome palette with soft grey shadows and clean lines to emphasize premium wellness and high-fashion editorial style."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYs74I5DhzosBYbsmkHDu664Xz8_4w0Bvd6vSu9cTEs2W4mwyc5RivZw7YYW6xKi7wj2cS4bNx5qEdQmit0T9pkS5l98MAHLnGhGHSJRRdY9kMEKiDeo6kKu2m53MQyMBnYR8Ufrs3TuXGbx81LszAYL5gmvh55tsiNLkW6p-s6su0y3I9ak9u_QNpiCwqf0m1Grj4PHmnkS5ct0rkuvDmNnFseYeNiazAa5PTDYTrnbrgm-VMuHG9I4Yp4kjQhmBU7GWZ_aBVJi0">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/60 to-transparent flex items-center px-stack-lg">
+                <div class="max-w-md text-on-primary">
+                    <p class="font-label-lg uppercase tracking-[0.3em] mb-stack-sm">Nesta Membership</p>
+                    <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-stack-md">Gói hội viên
+                        đặc quyền</h2>
+                    <p class="mb-stack-lg opacity-90">Tiết kiệm lên đến 25% cho tất cả các dịch vụ khi đăng ký gói hội
+                        viên theo tháng.</p>
+                    <button
+                        class="px-stack-lg py-4 border-2 border-white rounded-full font-label-lg uppercase tracking-widest hover:bg-white hover:text-primary transition-all">Khám
+                        phá ngay</button>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ/Service Guarantee Chips -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg text-center mb-10">
+            <div class="p-stack-lg flex flex-col items-center">
+                <span class="material-symbols-outlined text-[48px] text-primary mb-stack-md"
+                    data-icon="verified_user">verified_user</span>
+                <h4 class="font-label-lg mb-1">Chất lượng 5 sao</h4>
+                <p class="text-label-sm text-secondary">Kỹ thuật viên được đào tạo chuyên sâu theo chuẩn quốc tế.</p>
+            </div>
+            <div class="p-stack-lg flex flex-col items-center">
+                <span class="material-symbols-outlined text-[48px] text-primary mb-stack-md"
+                    data-icon="clean_hands">clean_hands</span>
+                <h4 class="font-label-lg mb-1">An toàn Tuyệt đối</h4>
+                <p class="text-label-sm text-secondary">Sử dụng tinh dầu hữu cơ và quy trình khử khuẩn nghiêm ngặt.</p>
+            </div>
+            <div class="p-stack-lg flex flex-col items-center">
+                <span class="material-symbols-outlined text-[48px] text-primary mb-stack-md"
+                    data-icon="schedule">schedule</span>
+                <h4 class="font-label-lg mb-1">Đúng giờ</h4>
+                <p class="text-label-sm text-secondary">Cam kết có mặt đúng thời gian đã hẹn trong vòng 30 phút.</p>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-surface-container-low dark:bg-surface-dim border-t border-surface-variant dark:border-outline-variant/10 w-full py-stack-lg mt-20">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center gap-stack-md px-gutter md:px-container-padding-desktop max-w-[1280px] mx-auto">
+            <div class="font-headline-md text-headline-md text-primary dark:text-on-primary-fixed">NESTA SPA</div>
+            <div class="flex gap-stack-md">
+                <a class="font-label-lg text-label-lg text-on-surface-variant hover:underline decoration-1 underline-offset-4 transition-opacity opacity-80 hover:opacity-100"
+                    href="#">Privacy Policy</a>
+                <a class="font-label-lg text-label-lg text-on-surface-variant hover:underline decoration-1 underline-offset-4 transition-opacity opacity-80 hover:opacity-100"
+                    href="#">Terms of Service</a>
+                <a class="font-label-lg text-label-lg text-on-surface-variant hover:underline decoration-1 underline-offset-4 transition-opacity opacity-80 hover:opacity-100"
+                    href="#">Sustainability</a>
+                <a class="font-label-lg text-label-lg text-on-surface-variant hover:underline decoration-1 underline-offset-4 transition-opacity opacity-80 hover:opacity-100"
+                    href="#">Careers</a>
+            </div>
+            <div class="font-label-lg text-label-lg text-on-surface-variant opacity-60">
+                © 2024 NESTA SPA. ELEVATED WELLNESS AT HOME.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
