@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="light" lang="vi">
 
 <head>
@@ -144,12 +144,15 @@
 
     <!-- Mobile Slidebar -->
     <div class="fixed top-0 right-0 h-full w-64 bg-surface z-50 shadow-2xl transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 flex flex-col px-6 py-8 md:hidden">
-        <div class="flex justify-between items-center mb-12">
-            <span class="font-label-lg uppercase tracking-widest text-primary font-bold">Menu</span>
+                <div class="flex justify-between items-center mb-8">
+            <a href="trangchu.html" class="block">
+                <img src="assets/images/logo.png" alt="NESTA SPA" class="h-16 w-auto object-contain scale-[1.3] origin-left">
+            </a>
             <label for="mobile-menu-toggle" class="cursor-pointer text-primary">
                 <span class="material-symbols-outlined text-[28px]">close</span>
             </label>
         </div>
+        <div class="mb-6 font-label-sm uppercase tracking-widest text-secondary font-bold border-b border-surface-variant pb-2">Menu</div>
         <div class="flex flex-col gap-6">
             <a href="trangchu.html" class="font-body-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors">Trang Chủ</a>
             <a href="dichvu.html" class="font-body-lg uppercase tracking-widest text-primary font-bold border-b border-primary pb-2 w-max">Dịch Vụ</a>
@@ -169,7 +172,7 @@
             </div>
             
             <!-- Desktop Menu -->
-            <div class="hidden md:flex flex-1 justify-center gap-stack-lg items-center">
+            <div class="max-lg:hidden flex flex-1 justify-center gap-8 items-center">
                 <a href="trangchu.html" class="font-body-md text-body-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300">Trang Chủ</a>
                 <a href="dichvu.html" class="font-body-md text-body-md uppercase tracking-widest text-primary font-bold border-b border-primary pb-1 transition-colors duration-300">Dịch Vụ</a>
                 <a href="banggia.html" class="font-body-md text-body-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300">Bảng Giá</a>
@@ -181,7 +184,7 @@
             <div class="flex items-center justify-end shrink-0 gap-4">
                 <a href="lienhe.html" class="bg-primary text-on-primary px-4 md:px-stack-lg py-2 md:py-3 rounded-full font-label-lg text-[10px] md:text-label-lg uppercase tracking-wider transition-transform duration-200 active:scale-90 text-center whitespace-nowrap">Đặt Lịch</a>
                 <!-- Hamburger Button for Mobile -->
-                <label for="mobile-menu-toggle" class="md:hidden cursor-pointer text-primary flex items-center">
+                <label for="mobile-menu-toggle" class="lg:hidden cursor-pointer text-primary flex items-center">
                     <span class="material-symbols-outlined text-[28px]">menu</span>
                 </label>
             </div>
@@ -434,25 +437,29 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer class="bg-surface-container-low border-t border-surface-variant/10 w-full py-stack-lg mt-24">
-        <div
-            class="flex flex-col md:flex-row justify-between items-center gap-stack-md px-gutter md:px-container-padding-desktop max-w-[1280px] mx-auto">
-            <div class="font-headline-md text-headline-md text-primary font-black tracking-tighter">NESTA SPA</div>
-            <div class="flex gap-8">
-                <a class="font-label-lg text-on-surface-variant hover:underline decoration-1 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity"
-                    href="#">Chính sách bảo mật</a>
-                <a class="font-label-lg text-on-surface-variant hover:underline decoration-1 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity"
-                    href="#">Điều khoản sử dụng</a>
-                <a class="font-label-lg text-on-surface-variant hover:underline decoration-1 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity"
-                    href="#">Phát triển bền vững</a>
-                <a class="font-label-lg text-on-surface-variant hover:underline decoration-1 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity"
-                    href="#">Tuyển dụng</a>
+            <footer class="bg-surface-container-low border-t border-surface-variant/10 w-full pt-16 pb-8 mt-24">
+        <div class="px-gutter md:px-container-padding-desktop max-w-[1280px] mx-auto">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-8 mb-8">
+                <div class="font-headline-md text-headline-md text-primary font-black tracking-tighter shrink-0">NESTA SPA</div>
+                <div class="flex flex-wrap justify-center lg:justify-end gap-x-8 gap-y-4">
+                    <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Chính sách bảo mật</a>
+                    <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Điều khoản sử dụng</a>
+                    <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Phát triển bền vững</a>
+                    <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Tuyển dụng</a>
+                </div>
             </div>
-            <div class="font-label-lg text-on-surface-variant uppercase tracking-widest">
-                © 2024 NESTA SPA. TRẢI NGHIỆM LUXURY WELLNESS TẠI GIA.
+            <div class="border-t border-outline-variant/20 pt-8 text-center flex justify-center items-center">
+                <div class="font-label-sm text-on-surface-variant uppercase tracking-widest">
+                    &copy; 2024 NESTA SPA. TRẢI NGHIỆM LUXURY WELLNESS TẠI GIA.
+                </div>
             </div>
         </div>
     </footer>
+<script src="assets/js/main.js"></script>
 </body>
 
 </html>
+
+
+
+

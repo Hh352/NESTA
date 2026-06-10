@@ -217,3 +217,26 @@ function showBookingSuccessModal(details) {
     if (e.target === modal) closeModal();
   });
 }
+
+// Carousel Looping Logic
+window.scrollCarousel = function(direction, sliderId = 'review-slider') {
+  const slider = document.getElementById(sliderId);
+  if (!slider) return;
+  
+  const scrollAmount = 350;
+  const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
+  
+  if (direction === 'next') {
+    if (slider.scrollLeft >= maxScrollLeft - 10) {
+      slider.scrollTo({ left: 0, behavior: 'smooth' });
+    } else {
+      slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  } else if (direction === 'prev') {
+    if (slider.scrollLeft <= 10) {
+      slider.scrollTo({ left: maxScrollLeft, behavior: 'smooth' });
+    } else {
+      slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    }
+  }
+};
