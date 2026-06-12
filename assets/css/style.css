@@ -956,3 +956,51 @@ header {
     grid-column: span 1;
   }
 }
+
+/* Hero Buttons */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 12px;
+  }
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+}
+
+/* Stats Row */
+.stats-row {
+  display: flex;
+  gap: 24px;
+}
+.stats-row > div {
+  flex: 1;
+  min-width: 0;
+}
+@media (max-width: 768px) {
+  .stats-row {
+    gap: 12px;
+    justify-content: space-between;
+  }
+  .stats-row > div {
+    text-align: center;
+  }
+  .stats-row .nesta-u-9epl1v {
+    font-size: 2rem !important;
+  }
+  .stats-row .nesta-u-izs0ea {
+    font-size: 0.65rem !important;
+    line-height: 1.2;
+  }
+}

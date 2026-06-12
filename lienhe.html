@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIÊN HỆ & ĐẶT LỊCH | NESTA SPA</title>
-    <link rel="stylesheet" href="assets/css/utilities.css?v=1.0.13">
-    <link rel="stylesheet" href="assets/css/style.css?v=1.0.13">
+    <link rel="stylesheet" href="assets/css/utilities.css?v=1.0.14">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.0.14">
     <style>
         .contact-info-card {
             display: flex;
@@ -16,6 +16,21 @@
             background: var(--bg-primary);
             border: 1px solid var(--border-light);
             transition: var(--transition);
+            min-width: 0;
+        }
+        .contact-info-card > div {
+            min-width: 0;
+            overflow-wrap: break-word;
+            word-break: break-all;
+        }
+        @media (max-width: 768px) {
+            .contact-info-card {
+                padding: 15px;
+                gap: 12px;
+            }
+            .contact-info-card p {
+                font-size: 0.95rem !important;
+            }
         }
         .contact-info-card:hover {
             box-shadow: 0 4px 20px rgba(0,0,0,0.05);
