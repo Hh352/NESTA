@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIÊN HỆ & ĐẶT LỊCH | NESTA SPA</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/utilities.css?v=1.0.13">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.0.13">
     <style>
         .contact-info-card {
             display: flex;
@@ -48,7 +49,7 @@
         }
         textarea.form-control {
             border-radius: 20px;
-            resize: vertical;
+            resize: none;
         }
     </style>
 </head>
@@ -63,7 +64,16 @@
             <nav class="nav-menu">
                 <a href="trangchu.html" class="nav-link">Trang Chủ</a>
                 <a href="dichvu.html" class="nav-link">Dịch Vụ</a>
-                <a href="banggia.html" class="nav-link">Bảng Giá</a>
+                <div class="nav-dropdown">
+                    <div class="nav-link nesta-u-16jro8" >
+                        <a href="banggia.html"  class="nesta-u-ilt95m">Bảng Giá</a>
+                        <span  class="nesta-u-y1lel2"><i data-lucide="chevron-down"  class="nesta-u-3j217i"></i></span>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="banggia.html#dich-vu-le">Dịch Vụ Lẻ</a>
+                        <a href="banggia.html#combo">Combo Trị Liệu</a>
+                    </div>
+                </div>
                 <a href="quytrinh.html" class="nav-link">Quy Trình</a>
                 <a href="lienhe.html" class="nav-link active">Liên Hệ</a>
             </nav>
@@ -80,14 +90,25 @@
     <nav id="mobile-menu">
         <a href="trangchu.html" class="nav-link">Trang Chủ</a>
         <a href="dichvu.html" class="nav-link">Dịch Vụ</a>
-        <a href="banggia.html" class="nav-link">Bảng Giá</a>
+        <div  class="nesta-u-f1onp4">
+            <div class="nav-link nesta-u-iw3sir" >
+                <a href="banggia.html"  class="nesta-u-as36sz">Bảng Giá</a>
+                <button onclick="const s=this.parentElement.nextElementSibling.style; s.setProperty('display', s.getPropertyValue('display')==='flex'?'none':'flex', 'important')"  class="nesta-u-wvlo4r">
+                    <i data-lucide="chevron-down"  class="nesta-u-ry279k"></i>
+                </button>
+            </div>
+            <div  class="nesta-u-t681bd">
+                <a href="banggia.html#dich-vu-le" class="nav-link nesta-u-fls0nb" >Dịch Vụ Lẻ</a>
+                <a href="banggia.html#combo" class="nav-link nesta-u-fls0nb" >Combo Trị Liệu</a>
+            </div>
+        </div>
         <a href="quytrinh.html" class="nav-link">Quy Trình</a>
         <a href="lienhe.html" class="nav-link active">Liên Hệ</a>
-        <a href="lienhe.html" class="btn btn-primary" style="justify-content: center;">Đặt Lịch</a>
+        <a href="lienhe.html" class="btn btn-primary nesta-u-gndaom" >Đặt Lịch</a>
     </nav>
 
     <!-- Breadcrumb Banner -->
-    <section class="breadcrumb-banner" style="background-image: url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1920&auto=format&fit=crop');">
+    <section class="breadcrumb-banner nesta-u-e6ah78" >
         <div class="breadcrumb-content">
             <h1>Liên Hệ</h1>
             <div class="breadcrumb-nav">
@@ -103,27 +124,27 @@
             <div class="container">
                 <div class="mb-12">
                     <h2 class="mb-4">Liên hệ & Đặt lịch</h2>
-                    <p style="color: var(--text-secondary); max-width: 600px;">Trải nghiệm liệu trình chăm sóc sức khỏe thượng lưu ngay tại không gian riêng tư của bạn. Đội ngũ NESTA SPA luôn sẵn sàng phục vụ.</p>
+                    <p  class="nesta-u-g6zrbc">Trải nghiệm liệu trình chăm sóc sức khỏe thượng lưu ngay tại không gian riêng tư của bạn. Đội ngũ NESTA SPA luôn sẵn sàng phục vụ.</p>
                 </div>
 
-                <div class="d-flex flex-wrap" style="gap: 40px;">
+                <div class="d-flex flex-wrap nesta-u-q5t4sz" >
                     <!-- Form Section -->
-                    <div style="flex: 2; min-width: 300px; background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 24px; padding: 40px; box-shadow: 0 4px 30px rgba(0,0,0,0.03);">
-                        <form style="display: flex; flex-direction: column; gap: 24px;">
-                            <div class="d-flex flex-wrap" style="gap: 24px;">
-                                <div style="flex: 1; min-width: 250px;">
-                                    <label style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-weight: bold; margin-left: 16px;">Họ và tên</label>
+                    <div  class="nesta-u-2ii8gr">
+                        <form  class="nesta-u-wwnb31">
+                            <div class="d-flex flex-wrap nesta-u-xd7l6u" >
+                                <div  class="nesta-u-hgx56o">
+                                    <label  class="nesta-u-ic5s6u">Họ và tên</label>
                                     <input type="text" class="form-control" placeholder="Nguyễn Văn A">
                                 </div>
-                                <div style="flex: 1; min-width: 250px;">
-                                    <label style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-weight: bold; margin-left: 16px;">Số điện thoại</label>
+                                <div  class="nesta-u-hgx56o">
+                                    <label  class="nesta-u-ic5s6u">Số điện thoại</label>
                                     <input type="tel" class="form-control" placeholder="090 123 4567">
                                 </div>
                             </div>
 
                             <div>
-                                <label style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-weight: bold; margin-left: 16px;">Dịch vụ lựa chọn</label>
-                                <select class="form-control" style="appearance: none; background-image: url('data:image/svg+xml;utf8,<svg fill=%22black%22 height=%2224%22 viewBox=%220 0 24 24%22 width=%2224%22 xmlns=%22http://www.w3.org/2000/svg%22><path d=%22M7 10l5 5 5-5z%22/><path d=%22M0 0h24v24H0z%22 fill=%22none%22/></svg>'); background-repeat: no-repeat; background-position-x: 98%; background-position-y: 50%;">
+                                <label  class="nesta-u-ic5s6u">Dịch vụ lựa chọn</label>
+                                <select class="form-control nesta-u-t060q5" >
                                     <option value="" disabled selected>Chọn gói liệu trình</option>
                                     <option>Nesta Signature Massage</option>
                                     <option>Botanical Aromatherapy</option>
@@ -132,42 +153,42 @@
                                 </select>
                             </div>
 
-                            <div class="d-flex flex-wrap" style="gap: 24px;">
-                                <div style="flex: 1; min-width: 250px;">
-                                    <label style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-weight: bold; margin-left: 16px;">Ngày hẹn</label>
+                            <div class="d-flex flex-wrap nesta-u-xd7l6u" >
+                                <div  class="nesta-u-hgx56o">
+                                    <label  class="nesta-u-ic5s6u">Ngày hẹn</label>
                                     <input type="date" class="form-control">
                                 </div>
-                                <div style="flex: 1; min-width: 250px;">
-                                    <label style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-weight: bold; margin-left: 16px;">Thời gian</label>
+                                <div  class="nesta-u-hgx56o">
+                                    <label  class="nesta-u-ic5s6u">Thời gian</label>
                                     <input type="time" class="form-control">
                                 </div>
                             </div>
 
                             <div>
-                                <label style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-weight: bold; margin-left: 16px;">Địa chỉ phục vụ</label>
+                                <label  class="nesta-u-ic5s6u">Địa chỉ phục vụ</label>
                                 <textarea class="form-control" rows="4" placeholder="Số nhà, tên đường, phường/xã, quận/huyện..."></textarea>
                             </div>
 
-                            <button type="button" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 20px; font-size: 1.125rem; border-radius: 50px; margin-top: 16px;">
+                            <button type="button" class="btn btn-primary nesta-u-flet9a" >
                                 GỬI YÊU CẦU ĐẶT LỊCH
                             </button>
                         </form>
                     </div>
 
                     <!-- Sidebar Section -->
-                    <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 32px;">
+                    <div  class="nesta-u-ma1v8b">
                         <!-- Contact Info -->
-                        <div style="background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 24px; padding: 32px; box-shadow: 0 4px 30px rgba(0,0,0,0.03);">
+                        <div  class="nesta-u-rd5zon">
                             <h3 class="mb-6">Thông tin liên hệ</h3>
                             
-                            <div style="display: flex; flex-direction: column; gap: 16px;">
+                            <div  class="nesta-u-z34jvk">
                                 <div class="contact-info-card">
                                     <div class="contact-icon">
                                         <i data-lucide="phone"></i>
                                     </div>
                                     <div>
-                                        <p style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; font-weight: bold; margin-bottom: 4px;">Hotline 24/7</p>
-                                        <p style="font-size: 1.25rem; font-weight: bold;">0909 123 456</p>
+                                        <p  class="nesta-u-03eete">Hotline 24/7</p>
+                                        <p  class="nesta-u-w8tgtn">0909 123 456</p>
                                     </div>
                                 </div>
                                 
@@ -176,8 +197,8 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.05 12A9 9 0 0012 3a9 9 0 00-9 9c0 2.25.83 4.3 2.21 5.86L4 21l3.32-1.07A8.96 8.96 0 0012 21a9 9 0 009.05-9z" fill="currentColor"/></svg>
                                     </div>
                                     <div>
-                                        <p style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; font-weight: bold; margin-bottom: 4px;">Zalo Official</p>
-                                        <p style="font-size: 1.25rem; font-weight: bold;">NESTA SPA</p>
+                                        <p  class="nesta-u-03eete">Zalo Official</p>
+                                        <p  class="nesta-u-w8tgtn">NESTA SPA</p>
                                     </div>
                                 </div>
 
@@ -186,37 +207,32 @@
                                         <i data-lucide="mail"></i>
                                     </div>
                                     <div>
-                                        <p style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; font-weight: bold; margin-bottom: 4px;">Email Hỗ Trợ</p>
-                                        <p style="font-size: 1.125rem; font-weight: bold;">hello@nestaspa.com</p>
+                                        <p  class="nesta-u-03eete">Email Hỗ Trợ</p>
+                                        <p  class="nesta-u-8jamya">hello@nestaspa.com</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Promo Box -->
-                        <div style="position: relative; height: 200px; border-radius: 24px; overflow: hidden; background: var(--text-primary); color: white; display: flex; flex-direction: column; justify-content: flex-end; padding: 32px;">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-KcTS3ZR6aNt2kKmVWKAETeUn8mek0JZItmfdgV99kih2fmgriPykk1nM7WMvz8NCwOLH1jf-W-bKOhmcHGspc12fXOKkyFYkGVeZrLljuggKmhmoPCz5KXFRqwmhBhi7JAwAg6kpG8qQot_67LHAmYbDK0kk76YMOzHRaHJVTAOekuz_-k4ZNztwLWbQO2UTwtbGgCw0ZmN5tln2SUQAXuEVKB2k5TBerElizfONcdZOd39JWMvIcNqC3qNj_S7Gbj43xMRUNkg" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.4;" alt="Promo">
-                            <div style="position: relative; z-index: 1;">
-                                <h3 style="color: white; margin-bottom: 8px; font-size: 1.5rem;">Membership<br>Privileges</h3>
-                                <p style="font-size: 0.875rem; opacity: 0.8;">Giảm 20% cho khách hàng thân thiết</p>
+                        <div  class="nesta-u-yjzdss">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-KcTS3ZR6aNt2kKmVWKAETeUn8mek0JZItmfdgV99kih2fmgriPykk1nM7WMvz8NCwOLH1jf-W-bKOhmcHGspc12fXOKkyFYkGVeZrLljuggKmhmoPCz5KXFRqwmhBhi7JAwAg6kpG8qQot_67LHAmYbDK0kk76YMOzHRaHJVTAOekuz_-k4ZNztwLWbQO2UTwtbGgCw0ZmN5tln2SUQAXuEVKB2k5TBerElizfONcdZOd39JWMvIcNqC3qNj_S7Gbj43xMRUNkg" alt="Promo" class="nesta-u-jvc6a7">
+                            <div  class="nesta-u-1ib9vp">
+                                <h3  class="nesta-u-6yge8n">Membership<br>Privileges</h3>
+                                <p  class="nesta-u-uc9v6x">Giảm 20% cho khách hàng thân thiết</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Map -->
-                <div style="margin-top: 60px; border-radius: 24px; overflow: hidden; border: 1px solid var(--border-light); height: 400px; position: relative;">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2961817454226!2d106.69970951526017!3d10.788612192313271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4ae68f76d9%3A0x62804b4d664cde37!2zUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1690000000000!5m2!1svi!2s" 
-                        style="width: 100%; height: 100%; border:0; transition: var(--transition);" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
+                <div  class="nesta-u-4454c9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2961817454226!2d106.69970951526017!3d10.788612192313271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4ae68f76d9%3A0x62804b4d664cde37!2zUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1690000000000!5m2!1svi!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="nesta-u-f3g33j">
                     </iframe>
                     
-                    <div style="position: absolute; top: 30px; left: 30px; background: white; padding: 24px; border-radius: var(--border-radius); box-shadow: 0 4px 20px rgba(0,0,0,0.1); max-width: 300px; display: none;" class="map-card-desktop">
-                        <h4 style="margin-bottom: 8px;">Trụ sở chính</h4>
-                        <p style="color: var(--text-secondary); font-size: 0.875rem; line-height: 1.6;">123 Đường ABC, Quận XYZ, TP.HCM</p>
+                    <div class="map-card-desktop nesta-u-qtmvgb">
+                        <h4  class="nesta-u-eepcce">Trụ sở chính</h4>
+                        <p  class="nesta-u-4m11ol">123 Đường ABC, Quận XYZ, TP.HCM</p>
                     </div>
                 </div>
                 <style>
@@ -232,15 +248,15 @@
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-col">
-                <img src="assets/images/logo.png" alt="NESTA SPA" style="width: 130px; margin-bottom: 24px; filter: brightness(0) invert(1);">
-                <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; line-height: 1.8;">Trải nghiệm chăm sóc sức khỏe và làm đẹp thượng lưu chuẩn 5 sao ngay tại không gian riêng tư của bạn.</p>
+                <img src="assets/images/logo.png" alt="NESTA SPA"  class="nesta-u-ncbunx">
+                <p  class="nesta-u-szfzat">Trải nghiệm chăm sóc sức khỏe và làm đẹp thượng lưu chuẩn 5 sao ngay tại không gian riêng tư của bạn.</p>
             </div>
             <div class="footer-col">
                 <h4>Thông tin liên hệ</h4>
-                <p><i data-lucide="map-pin" style="display:inline-block; vertical-align:middle; width:16px;"></i> 123 Đường ABC, Quận XYZ, TP.HCM</p>
-                <p><i data-lucide="phone" style="display:inline-block; vertical-align:middle; width:16px;"></i> Hotline: 0909 123 456</p>
-                <p><i data-lucide="mail" style="display:inline-block; vertical-align:middle; width:16px;"></i> Email: contact@nestaspa.com</p>
-                <p><i data-lucide="clock" style="display:inline-block; vertical-align:middle; width:16px;"></i> Giờ mở cửa: 09:00 - 21:00</p>
+                <p><i data-lucide="map-pin"  class="nesta-u-tsow4l"></i> 123 Đường ABC, Quận XYZ, TP.HCM</p>
+                <p><i data-lucide="phone"  class="nesta-u-tsow4l"></i> Hotline: 0909 123 456</p>
+                <p><i data-lucide="mail"  class="nesta-u-tsow4l"></i> Email: contact@nestaspa.com</p>
+                <p><i data-lucide="clock"  class="nesta-u-tsow4l"></i> Giờ mở cửa: 09:00 - 21:00</p>
             </div>
             <div class="footer-col">
                 <h4>Liên kết</h4>
@@ -262,9 +278,9 @@
             </div>
             <div class="footer-col">
                 <h4>Fanpage</h4>
-                <div style="background:#222; padding:20px; border-radius:10px; text-align:center;">
-                    <p style="color: white; font-weight: bold; margin-bottom: 12px;">Nesta Spa Fanpage</p>
-                    <a href="#" class="btn btn-outline" style="color:white; border-color:white; margin-top:10px;"><i data-lucide="facebook"></i> Theo dõi</a>
+                <div  class="nesta-u-v6ns6a">
+                    <p  class="nesta-u-iqp8c6">Nesta Spa Fanpage</p>
+                    <a href="#" class="btn btn-outline nesta-u-xegv0u" ><i data-lucide="facebook"></i> Theo dõi</a>
                 </div>
             </div>
         </div>
@@ -286,10 +302,32 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-        lucide.createIcons();
-        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('open');
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        mobileBtn.addEventListener('click', function() {
+            const isOpen = document.getElementById('mobile-menu').classList.toggle('open');
+            mobileBtn.innerHTML = isOpen ? '<i data-lucide="x"></i>' : '<i data-lucide="menu"></i>';
+            lucide.createIcons();
         });
+    
+        lucide.createIcons();
     </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

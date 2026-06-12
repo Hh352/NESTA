@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bảng giá Dịch vụ | NESTA SPA</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/utilities.css?v=1.0.13">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.0.13">
 </head>
 <body>
 
@@ -17,7 +18,16 @@
             <nav class="nav-menu">
                 <a href="trangchu.html" class="nav-link">Trang Chủ</a>
                 <a href="dichvu.html" class="nav-link">Dịch Vụ</a>
-                <a href="banggia.html" class="nav-link active">Bảng Giá</a>
+                <div class="nav-dropdown">
+                    <div class="nav-link active nesta-u-16jro8" >
+                        <a href="banggia.html"  class="nesta-u-ilt95m">Bảng Giá</a>
+                        <span  class="nesta-u-y1lel2"><i data-lucide="chevron-down"  class="nesta-u-3j217i"></i></span>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="banggia.html#dich-vu-le">Dịch Vụ Lẻ</a>
+                        <a href="banggia.html#combo">Combo Trị Liệu</a>
+                    </div>
+                </div>
                 <a href="quytrinh.html" class="nav-link">Quy Trình</a>
                 <a href="lienhe.html" class="nav-link">Liên Hệ</a>
             </nav>
@@ -34,14 +44,25 @@
     <nav id="mobile-menu">
         <a href="trangchu.html" class="nav-link">Trang Chủ</a>
         <a href="dichvu.html" class="nav-link">Dịch Vụ</a>
-        <a href="banggia.html" class="nav-link active">Bảng Giá</a>
+        <div  class="nesta-u-f1onp4">
+            <div class="nav-link active nesta-u-iw3sir" >
+                <a href="banggia.html"  class="nesta-u-as36sz">Bảng Giá</a>
+                <button onclick="const s=this.parentElement.nextElementSibling.style; s.setProperty('display', s.getPropertyValue('display')==='flex'?'none':'flex', 'important')"  class="nesta-u-wvlo4r">
+                    <i data-lucide="chevron-down"  class="nesta-u-ry279k"></i>
+                </button>
+            </div>
+            <div  class="nesta-u-t681bd">
+                <a href="banggia.html#dich-vu-le" class="nav-link nesta-u-fls0nb" >Dịch Vụ Lẻ</a>
+                <a href="banggia.html#combo" class="nav-link nesta-u-fls0nb" >Combo Trị Liệu</a>
+            </div>
+        </div>
         <a href="quytrinh.html" class="nav-link">Quy Trình</a>
         <a href="lienhe.html" class="nav-link">Liên Hệ</a>
-        <a href="lienhe.html" class="btn btn-primary" style="justify-content: center;">Đặt Lịch</a>
+        <a href="lienhe.html" class="btn btn-primary nesta-u-gndaom" >Đặt Lịch</a>
     </nav>
 
     <!-- Breadcrumb Banner -->
-    <section class="breadcrumb-banner" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1920&auto=format&fit=crop');">
+    <section class="breadcrumb-banner nesta-u-43jnvk" >
         <div class="breadcrumb-content">
             <h1>Bảng Giá</h1>
             <div class="breadcrumb-nav">
@@ -111,22 +132,22 @@
                 </div>
 
                 <div class="d-flex flex-wrap gap-4 mt-4 justify-content-between">
-                    <div style="flex: 1; min-width: 300px; padding: 24px; background: var(--bg-secondary); border-radius: var(--border-radius);">
-                        <h4 style="display:flex; align-items:center; gap:8px; margin-bottom: 16px;"><i data-lucide="info"></i> Phụ phí dịch vụ</h4>
-                        <ul style="list-style: disc; margin-left: 20px; font-size: 0.875rem; color: var(--text-secondary);">
+                    <div  class="nesta-u-1j2p6i">
+                        <h4  class="nesta-u-0g82xk"><i data-lucide="info"></i> Phụ phí dịch vụ</h4>
+                        <ul  class="nesta-u-xwja33">
                             <li>Lễ/Tết: +15%</li>
                             <li>Sau 22h: +100.000đ</li>
                             <li>Yêu cầu Kỹ Thuật Viên: +50.000đ</li>
                         </ul>
                     </div>
-                    <div style="flex: 1; min-width: 300px; padding: 24px; background: var(--bg-secondary); border-radius: var(--border-radius);">
-                        <h4 style="display:flex; align-items:center; gap:8px; margin-bottom: 16px;"><i data-lucide="map-pin"></i> Khu vực phục vụ</h4>
+                    <div  class="nesta-u-1j2p6i">
+                        <h4  class="nesta-u-0g82xk"><i data-lucide="map-pin"></i> Khu vực phục vụ</h4>
                         <div class="d-flex flex-wrap gap-2">
-                            <span style="background: var(--bg-primary); padding: 4px 12px; border-radius: 20px; font-size: 0.875rem; border: 1px solid var(--border-light);">Quận 1</span>
-                            <span style="background: var(--bg-primary); padding: 4px 12px; border-radius: 20px; font-size: 0.875rem; border: 1px solid var(--border-light);">Quận 3</span>
-                            <span style="background: var(--bg-primary); padding: 4px 12px; border-radius: 20px; font-size: 0.875rem; border: 1px solid var(--border-light);">Quận 7</span>
-                            <span style="background: var(--bg-primary); padding: 4px 12px; border-radius: 20px; font-size: 0.875rem; border: 1px solid var(--border-light);">Thủ Đức</span>
-                            <span style="background: var(--bg-primary); padding: 4px 12px; border-radius: 20px; font-size: 0.875rem; border: 1px dashed var(--border-dark);">Ngoại thành (Liên hệ)</span>
+                            <span  class="nesta-u-ykz5tn">Quận 1</span>
+                            <span  class="nesta-u-ykz5tn">Quận 3</span>
+                            <span  class="nesta-u-ykz5tn">Quận 7</span>
+                            <span  class="nesta-u-ykz5tn">Thủ Đức</span>
+                            <span  class="nesta-u-6z55ce">Ngoại thành (Liên hệ)</span>
                         </div>
                     </div>
                 </div>
@@ -134,17 +155,17 @@
                 <!-- Benefits section with 3 icons layout -->
                 <div class="benefits-grid">
                     <div class="benefit-item">
-                        <div class="benefit-icon"><i data-lucide="shield-check" style="width:32px; height:32px;"></i></div>
+                        <div class="benefit-icon"><i data-lucide="shield-check"  class="nesta-u-8fz9bv"></i></div>
                         <div class="benefit-title">Chất lượng 5 sao</div>
                         <div class="benefit-desc">Kỹ thuật viên được đào tạo chuyên sâu theo chuẩn quốc tế.</div>
                     </div>
                     <div class="benefit-item">
-                        <div class="benefit-icon"><i data-lucide="hand-metal" style="width:32px; height:32px;"></i></div>
+                        <div class="benefit-icon"><i data-lucide="hand-metal"  class="nesta-u-8fz9bv"></i></div>
                         <div class="benefit-title">An toàn Tuyệt đối</div>
                         <div class="benefit-desc">Sử dụng tinh dầu hữu cơ và quy trình khử khuẩn nghiêm ngặt.</div>
                     </div>
                     <div class="benefit-item">
-                        <div class="benefit-icon"><i data-lucide="clock-3" style="width:32px; height:32px;"></i></div>
+                        <div class="benefit-icon"><i data-lucide="clock-3"  class="nesta-u-8fz9bv"></i></div>
                         <div class="benefit-title">Đúng giờ</div>
                         <div class="benefit-desc">Cam kết có mặt đúng thời gian đã hẹn trong vòng 30 phút.</div>
                     </div>
@@ -158,15 +179,15 @@
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-col">
-                <img src="assets/images/logo.png" alt="NESTA SPA" style="width: 130px; margin-bottom: 24px; filter: brightness(0) invert(1);">
-                <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; line-height: 1.8;">Trải nghiệm chăm sóc sức khỏe và làm đẹp thượng lưu chuẩn 5 sao ngay tại không gian riêng tư của bạn.</p>
+                <img src="assets/images/logo.png" alt="NESTA SPA"  class="nesta-u-ncbunx">
+                <p  class="nesta-u-szfzat">Trải nghiệm chăm sóc sức khỏe và làm đẹp thượng lưu chuẩn 5 sao ngay tại không gian riêng tư của bạn.</p>
             </div>
             <div class="footer-col">
                 <h4>Thông tin liên hệ</h4>
-                <p><i data-lucide="map-pin" style="display:inline-block; vertical-align:middle; width:16px;"></i> 123 Đường ABC, Quận XYZ, TP.HCM</p>
-                <p><i data-lucide="phone" style="display:inline-block; vertical-align:middle; width:16px;"></i> Hotline: 0909 123 456</p>
-                <p><i data-lucide="mail" style="display:inline-block; vertical-align:middle; width:16px;"></i> Email: contact@nestaspa.com</p>
-                <p><i data-lucide="clock" style="display:inline-block; vertical-align:middle; width:16px;"></i> Giờ mở cửa: 09:00 - 21:00</p>
+                <p><i data-lucide="map-pin"  class="nesta-u-tsow4l"></i> 123 Đường ABC, Quận XYZ, TP.HCM</p>
+                <p><i data-lucide="phone"  class="nesta-u-tsow4l"></i> Hotline: 0909 123 456</p>
+                <p><i data-lucide="mail"  class="nesta-u-tsow4l"></i> Email: contact@nestaspa.com</p>
+                <p><i data-lucide="clock"  class="nesta-u-tsow4l"></i> Giờ mở cửa: 09:00 - 21:00</p>
             </div>
             <div class="footer-col">
                 <h4>Liên kết</h4>
@@ -188,9 +209,9 @@
             </div>
             <div class="footer-col">
                 <h4>Fanpage</h4>
-                <div style="background:#222; padding:20px; border-radius:10px; text-align:center;">
-                    <p style="color: white; font-weight: bold; margin-bottom: 12px;">Nesta Spa Fanpage</p>
-                    <a href="#" class="btn btn-outline" style="color:white; border-color:white; margin-top:10px;"><i data-lucide="facebook"></i> Theo dõi</a>
+                <div  class="nesta-u-v6ns6a">
+                    <p  class="nesta-u-iqp8c6">Nesta Spa Fanpage</p>
+                    <a href="#" class="btn btn-outline nesta-u-xegv0u" ><i data-lucide="facebook"></i> Theo dõi</a>
                 </div>
             </div>
         </div>
@@ -215,9 +236,32 @@
     <script>
         lucide.createIcons();
         // Mobile menu toggle
-        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('open');
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        mobileBtn.addEventListener('click', function() {
+            const isOpen = document.getElementById('mobile-menu').classList.toggle('open');
+            mobileBtn.innerHTML = isOpen ? '<i data-lucide="x"></i>' : '<i data-lucide="menu"></i>';
+            lucide.createIcons();
         });
+    
+        lucide.createIcons();
     </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

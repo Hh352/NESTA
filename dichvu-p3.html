@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DỊCH VỤ TINH KHIẾT | NESTA SPA</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/utilities.css?v=1.0.13">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.0.13">
 </head>
 <body>
 
@@ -17,7 +18,16 @@
             <nav class="nav-menu">
                 <a href="trangchu.html" class="nav-link">Trang Chủ</a>
                 <a href="dichvu.html" class="nav-link active">Dịch Vụ</a>
-                <a href="banggia.html" class="nav-link">Bảng Giá</a>
+                <div class="nav-dropdown">
+                    <div class="nav-link nesta-u-16jro8" >
+                        <a href="banggia.html"  class="nesta-u-ilt95m">Bảng Giá</a>
+                        <span  class="nesta-u-y1lel2"><i data-lucide="chevron-down"  class="nesta-u-3j217i"></i></span>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="banggia.html#dich-vu-le">Dịch Vụ Lẻ</a>
+                        <a href="banggia.html#combo">Combo Trị Liệu</a>
+                    </div>
+                </div>
                 <a href="quytrinh.html" class="nav-link">Quy Trình</a>
                 <a href="lienhe.html" class="nav-link">Liên Hệ</a>
             </nav>
@@ -34,14 +44,25 @@
     <nav id="mobile-menu">
         <a href="trangchu.html" class="nav-link">Trang Chủ</a>
         <a href="dichvu.html" class="nav-link active">Dịch Vụ</a>
-        <a href="banggia.html" class="nav-link">Bảng Giá</a>
+        <div  class="nesta-u-f1onp4">
+            <div class="nav-link nesta-u-iw3sir" >
+                <a href="banggia.html"  class="nesta-u-as36sz">Bảng Giá</a>
+                <button onclick="const s=this.parentElement.nextElementSibling.style; s.setProperty('display', s.getPropertyValue('display')==='flex'?'none':'flex', 'important')"  class="nesta-u-wvlo4r">
+                    <i data-lucide="chevron-down"  class="nesta-u-ry279k"></i>
+                </button>
+            </div>
+            <div  class="nesta-u-t681bd">
+                <a href="banggia.html#dich-vu-le" class="nav-link nesta-u-fls0nb" >Dịch Vụ Lẻ</a>
+                <a href="banggia.html#combo" class="nav-link nesta-u-fls0nb" >Combo Trị Liệu</a>
+            </div>
+        </div>
         <a href="quytrinh.html" class="nav-link">Quy Trình</a>
         <a href="lienhe.html" class="nav-link">Liên Hệ</a>
-        <a href="lienhe.html" class="btn btn-primary" style="justify-content: center;">Đặt Lịch</a>
+        <a href="lienhe.html" class="btn btn-primary nesta-u-gndaom" >Đặt Lịch</a>
     </nav>
 
     <!-- Breadcrumb Banner -->
-    <section class="breadcrumb-banner" style="background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1920&auto=format&fit=crop');">
+    <section class="breadcrumb-banner nesta-u-sun1a2" >
         <div class="breadcrumb-content">
             <h1>Dịch Vụ</h1>
             <div class="breadcrumb-nav">
@@ -54,11 +75,11 @@
 
     <main>
         <!-- Category Filter -->
-        <section style="padding: 40px 0 20px 0;">
+        <section  class="nesta-u-757y4y">
             <div class="container text-center">
                 <h2 class="mb-4">Dịch Vụ Tinh Khiết</h2>
-                <p class="mb-8" style="color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto;">Những liệu trình chăm sóc sức khỏe thượng lưu dành cho tâm hồn hiện đại. Trải nghiệm sự thư giãn tuyệt đối và tinh tế tại không gian của riêng bạn.</p>
-                <div class="d-flex justify-content-center gap-3 flex-wrap" style="margin-bottom: 20px;">
+                <p class="mb-8 nesta-u-dnik6p" >Những liệu trình chăm sóc sức khỏe thượng lưu dành cho tâm hồn hiện đại. Trải nghiệm sự thư giãn tuyệt đối và tinh tế tại không gian của riêng bạn.</p>
+                <div class="filter-tabs nesta-u-wjijdl" >
                     <button class="btn btn-primary" onclick="filterServices('all')">Tất cả</button>
                     <button class="btn btn-outline" onclick="filterServices('Massage')">Massage</button>
                     <button class="btn btn-outline" onclick="filterServices('Skin Care')">Chăm sóc Da</button>
@@ -73,96 +94,96 @@
                 <div class="card-grid" id="services-grid">
                     <!-- Card 1 -->
                     <div class="card" onclick="window.location.href='chitietdichvu.html?s=mebau'">
-                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA99JOg7-QUXEyJP0ztKLa-T-_ms1C6rR3bjCQtM4_Ju5YO0lzM8j8riuf4ZGvHfmx3UY0ln_RfE5itc4r7Nl762Y9lXo51Ojiejo2Q9XScpBu45e1QuyVsLB2NZl9rTVdM3YB9ZmeCeXr0VlTBvG7K-SxzyyY6ECdRcz9rSoLihtHzC5dpWAI1Uos4JDlQMN2sFojJL_r38hMuisOs_GslSVjaXMdGkCGH2utxrFVPXVhpDK6_eXoKnLu_sTXVV05z67WgWSpsIk0" class="card-image" style="filter: grayscale(100%);" alt="Massage Mẹ Bầu">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA99JOg7-QUXEyJP0ztKLa-T-_ms1C6rR3bjCQtM4_Ju5YO0lzM8j8riuf4ZGvHfmx3UY0ln_RfE5itc4r7Nl762Y9lXo51Ojiejo2Q9XScpBu45e1QuyVsLB2NZl9rTVdM3YB9ZmeCeXr0VlTBvG7K-SxzyyY6ECdRcz9rSoLihtHzC5dpWAI1Uos4JDlQMN2sFojJL_r38hMuisOs_GslSVjaXMdGkCGH2utxrFVPXVhpDK6_eXoKnLu_sTXVV05z67WgWSpsIk0" class="card-image nesta-u-9j7pn2" alt="Massage Mẹ Bầu">
                         <div class="card-body">
                             <div class="card-tag">Massage - 75 Phút</div>
                             <h3 class="card-title">Massage Mẹ Bầu Chuyên Sâu</h3>
                             <p class="card-desc">Liệu pháp nhẹ nhàng an toàn tuyệt đối, giúp mẹ bầu thư giãn, giảm thiểu đau mỏi thai kỳ.</p>
                             <div class="d-flex justify-content-between align-items-center mt-4">
-                                <span style="font-weight: bold; font-size: 1.25rem;">$140</span>
-                                <a href="lienhe.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.75rem;">Đặt ngay</a>
+                                <span  class="nesta-u-0dgs0h">$140</span>
+                                <a href="javascript:void(0)" class="btn btn-outline nesta-u-3w5vr2" >Xem chi tiết</a>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Card 2 -->
                     <div class="card" onclick="window.location.href='chitietdichvu.html?s=dieukhac'">
-                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgWkjgXrSeJbA7cmQkpZgtJPsMWBLze5ybg-tnL8Fa8ZgzfVpAx4CqECWfcHlvxuZ14UZ6KABpZIpfIK6OVC4r102qfsKuEfHc3cxmOZKnFPMNzLkG-rbzVw-Evdv3QXX-8KUMbo4yJFaXayf9q6cp1xeERA3zys2bfGSn7t-GjQ0qFs2sCuoNUYpqeGADS7VYj-hj1qp3Z3U3Sn0doGB-YK7WhkBfms3H0orExiToO0R25jitBf9Dro6dLLsTEAY2qW586pSw2U8" class="card-image" style="filter: grayscale(100%);" alt="Điêu Khắc Body">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgWkjgXrSeJbA7cmQkpZgtJPsMWBLze5ybg-tnL8Fa8ZgzfVpAx4CqECWfcHlvxuZ14UZ6KABpZIpfIK6OVC4r102qfsKuEfHc3cxmOZKnFPMNzLkG-rbzVw-Evdv3QXX-8KUMbo4yJFaXayf9q6cp1xeERA3zys2bfGSn7t-GjQ0qFs2sCuoNUYpqeGADS7VYj-hj1qp3Z3U3Sn0doGB-YK7WhkBfms3H0orExiToO0R25jitBf9Dro6dLLsTEAY2qW586pSw2U8" class="card-image nesta-u-9j7pn2" alt="Điêu Khắc Body">
                         <div class="card-body">
                             <div class="card-tag">Gói Combo - 130 Phút</div>
                             <h3 class="card-title">Gói Trị Liệu Điêu Khắc Body</h3>
                             <p class="card-desc">Kết hợp massage đánh mỡ và các liệu pháp định hình dáng thon gọn cơ thể một cách tự nhiên.</p>
                             <div class="d-flex justify-content-between align-items-center mt-4">
-                                <span style="font-weight: bold; font-size: 1.25rem;">$260</span>
-                                <a href="lienhe.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.75rem;">Đặt ngay</a>
+                                <span  class="nesta-u-0dgs0h">$260</span>
+                                <a href="javascript:void(0)" class="btn btn-outline nesta-u-3w5vr2" >Xem chi tiết</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 3 -->
                     <div class="card" onclick="window.location.href='chitietdichvu.html?s=collagen'">
-                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbUBuRbhC_qREwtfvzx71frBmSVQb3OcbC7Gyj1RDmZHu0p-KFfJVJ_mgP9-Kb9OsOrj4ELErxzvGnZhaN-9o5sh6DACxmOKAmi7y5htdMkc_JQiRjng3LPkXlPrPhAr-MfivvydWnXRfjO7AA0ibvxXB7CMXcCJHDB1dfCNOG_NJdDbtQaXVn__bsZkVORLAztkli7Rp8vMlUPv8J9xueHW1CASAcZFePFWhspugsnZzPIxsisz5FPTtMmWgCG6Yu9PpWhqQ2MCE" class="card-image" style="filter: grayscale(100%);" alt="Sáng Da Collagen">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbUBuRbhC_qREwtfvzx71frBmSVQb3OcbC7Gyj1RDmZHu0p-KFfJVJ_mgP9-Kb9OsOrj4ELErxzvGnZhaN-9o5sh6DACxmOKAmi7y5htdMkc_JQiRjng3LPkXlPrPhAr-MfivvydWnXRfjO7AA0ibvxXB7CMXcCJHDB1dfCNOG_NJdDbtQaXVn__bsZkVORLAztkli7Rp8vMlUPv8J9xueHW1CASAcZFePFWhspugsnZzPIxsisz5FPTtMmWgCG6Yu9PpWhqQ2MCE" class="card-image nesta-u-9j7pn2" alt="Sáng Da Collagen">
                         <div class="card-body">
                             <div class="card-tag">Chăm sóc Da - 90 Phút</div>
                             <h3 class="card-title">Sáng Da Tươi Collagen</h3>
                             <p class="card-desc">Bổ sung collagen trực tiếp, phục hồi cấu trúc elastin giúp da đàn hồi, xóa mờ nếp nhăn.</p>
                             <div class="d-flex justify-content-between align-items-center mt-4">
-                                <span style="font-weight: bold; font-size: 1.25rem;">$185</span>
-                                <a href="lienhe.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.75rem;">Đặt ngay</a>
+                                <span  class="nesta-u-0dgs0h">$185</span>
+                                <a href="javascript:void(0)" class="btn btn-outline nesta-u-3w5vr2" >Xem chi tiết</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 4 -->
                     <div class="card" onclick="window.location.href='chitietdichvu.html?s=damuoi'">
-                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA99JOg7-QUXEyJP0ztKLa-T-_ms1C6rR3bjCQtM4_Ju5YO0lzM8j8riuf4ZGvHfmx3UY0ln_RfE5itc4r7Nl762Y9lXo51Ojiejo2Q9XScpBu45e1QuyVsLB2NZl9rTVdM3YB9ZmeCeXr0VlTBvG7K-SxzyyY6ECdRcz9rSoLihtHzC5dpWAI1Uos4JDlQMN2sFojJL_r38hMuisOs_GslSVjaXMdGkCGH2utxrFVPXVhpDK6_eXoKnLu_sTXVV05z67WgWSpsIk0" class="card-image" style="filter: grayscale(100%);" alt="Đá Muối Himalaya">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA99JOg7-QUXEyJP0ztKLa-T-_ms1C6rR3bjCQtM4_Ju5YO0lzM8j8riuf4ZGvHfmx3UY0ln_RfE5itc4r7Nl762Y9lXo51Ojiejo2Q9XScpBu45e1QuyVsLB2NZl9rTVdM3YB9ZmeCeXr0VlTBvG7K-SxzyyY6ECdRcz9rSoLihtHzC5dpWAI1Uos4JDlQMN2sFojJL_r38hMuisOs_GslSVjaXMdGkCGH2utxrFVPXVhpDK6_eXoKnLu_sTXVV05z67WgWSpsIk0" class="card-image nesta-u-9j7pn2" alt="Đá Muối Himalaya">
                         <div class="card-body">
                             <div class="card-tag">Massage - 75 Phút</div>
                             <h3 class="card-title">Đá Muối Himalaya Ritual</h3>
                             <p class="card-desc">Thải độc sâu cơ thể nhờ ion âm từ đá muối ngàn năm, mang lại giấc ngủ ngon và sâu hơn.</p>
                             <div class="d-flex justify-content-between align-items-center mt-4">
-                                <span style="font-weight: bold; font-size: 1.25rem;">$155</span>
-                                <a href="lienhe.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.75rem;">Đặt ngay</a>
+                                <span  class="nesta-u-0dgs0h">$155</span>
+                                <a href="javascript:void(0)" class="btn btn-outline nesta-u-3w5vr2" >Xem chi tiết</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 5 -->
                     <div class="card" onclick="window.location.href='chitietdichvu.html?s=matnavang'">
-                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbUBuRbhC_qREwtfvzx71frBmSVQb3OcbC7Gyj1RDmZHu0p-KFfJVJ_mgP9-Kb9OsOrj4ELErxzvGnZhaN-9o5sh6DACxmOKAmi7y5htdMkc_JQiRjng3LPkXlPrPhAr-MfivvydWnXRfjO7AA0ibvxXB7CMXcCJHDB1dfCNOG_NJdDbtQaXVn__bsZkVORLAztkli7Rp8vMlUPv8J9xueHW1CASAcZFePFWhspugsnZzPIxsisz5FPTtMmWgCG6Yu9PpWhqQ2MCE" class="card-image" style="filter: grayscale(100%);" alt="Mặt Nạ Vàng 24K">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbUBuRbhC_qREwtfvzx71frBmSVQb3OcbC7Gyj1RDmZHu0p-KFfJVJ_mgP9-Kb9OsOrj4ELErxzvGnZhaN-9o5sh6DACxmOKAmi7y5htdMkc_JQiRjng3LPkXlPrPhAr-MfivvydWnXRfjO7AA0ibvxXB7CMXcCJHDB1dfCNOG_NJdDbtQaXVn__bsZkVORLAztkli7Rp8vMlUPv8J9xueHW1CASAcZFePFWhspugsnZzPIxsisz5FPTtMmWgCG6Yu9PpWhqQ2MCE" class="card-image nesta-u-9j7pn2" alt="Mặt Nạ Vàng 24K">
                         <div class="card-body">
                             <div class="card-tag">Chăm sóc Da - 60 Phút</div>
                             <h3 class="card-title">Mặt Nạ Vàng 24K Nâng Cơ</h3>
                             <p class="card-desc">Liệu pháp hoàng gia ứng dụng vàng 24k hỗ trợ nâng cơ, giảm thiểu vết chân chim vượt trội.</p>
                             <div class="d-flex justify-content-between align-items-center mt-4">
-                                <span style="font-weight: bold; font-size: 1.25rem;">$195</span>
-                                <a href="lienhe.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.75rem;">Đặt ngay</a>
+                                <span  class="nesta-u-0dgs0h">$195</span>
+                                <a href="javascript:void(0)" class="btn btn-outline nesta-u-3w5vr2" >Xem chi tiết</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 6 -->
                     <div class="card" onclick="window.location.href='chitietdichvu.html?s=thaoduoctoandien'">
-                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAitn8iRrm_DXD5vyuo10foNu_6kHPMWzLAnK-DChLiNbwlEHA3YR1qXThCOfGeJdmzfGw8uIpRjVVQDxST3kRiYCPxsVpWs1pPxqLY-ws8rE1iwJvO_coS5K23wHfiP-hoyRSUbPjSTZ_qOMxpgKxhLEYqNL_2pC16hN5kKmEq1LOrFPMbgtlVJeUhjvjnNBvnrUPOWp1O4x8ksNvVNMGCorBHrLnuMtISgIpH45Nr9OvLgNuBmQ26MEXPFolNoVpUYeeE5rgF-vY" class="card-image" style="filter: grayscale(100%);" alt="Thảo Dược Toàn Diện">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAitn8iRrm_DXD5vyuo10foNu_6kHPMWzLAnK-DChLiNbwlEHA3YR1qXThCOfGeJdmzfGw8uIpRjVVQDxST3kRiYCPxsVpWs1pPxqLY-ws8rE1iwJvO_coS5K23wHfiP-hoyRSUbPjSTZ_qOMxpgKxhLEYqNL_2pC16hN5kKmEq1LOrFPMbgtlVJeUhjvjnNBvnrUPOWp1O4x8ksNvVNMGCorBHrLnuMtISgIpH45Nr9OvLgNuBmQ26MEXPFolNoVpUYeeE5rgF-vY" class="card-image nesta-u-9j7pn2" alt="Thảo Dược Toàn Diện">
                         <div class="card-body">
                             <div class="card-tag">Gói Combo - 140 Phút</div>
                             <h3 class="card-title">Thảo Dược Toàn Diện</h3>
                             <p class="card-desc">Gói chăm sóc full body với bài thuốc ngâm tắm thảo dược của người Dao Đỏ và massage truyền thống.</p>
                             <div class="d-flex justify-content-between align-items-center mt-4">
-                                <span style="font-weight: bold; font-size: 1.25rem;">$275</span>
-                                <a href="lienhe.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.75rem;">Đặt ngay</a>
+                                <span  class="nesta-u-0dgs0h">$275</span>
+                                <a href="javascript:void(0)" class="btn btn-outline nesta-u-3w5vr2" >Xem chi tiết</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Pagination -->
-                <div class="d-flex justify-content-center gap-2" style="margin-top: 60px;">
-                    <a href="dichvu-p2.html" class="btn btn-outline" style="padding: 10px 14px; border-radius: 5px;"><i data-lucide="chevron-left"></i></a>
-                    <a href="dichvu.html" class="btn btn-outline" style="padding: 10px 18px; border-radius: 5px;">1</a>
-                    <a href="dichvu-p2.html" class="btn btn-outline" style="padding: 10px 18px; border-radius: 5px;">2</a>
-                    <a href="dichvu-p3.html" class="btn btn-primary" style="padding: 10px 18px; border-radius: 5px;">3</a>
-                    <a href="#" class="btn btn-outline" style="padding: 10px 14px; border-radius: 5px; opacity: 0.5; pointer-events: none;"><i data-lucide="chevron-right"></i></a>
+                <div class="d-flex justify-content-center gap-2 nesta-u-w9o2ua" >
+                    <a href="dichvu-p2.html" class="btn btn-outline nesta-u-n14pu4" ><i data-lucide="chevron-left"></i></a>
+                    <a href="dichvu.html" class="btn btn-outline nesta-u-n2s5cr" >1</a>
+                    <a href="dichvu-p2.html" class="btn btn-outline nesta-u-n2s5cr" >2</a>
+                    <a href="dichvu-p3.html" class="btn btn-primary nesta-u-n2s5cr" >3</a>
+                    <a href="#" class="btn btn-outline nesta-u-pvv6hg" ><i data-lucide="chevron-right"></i></a>
                 </div>
             </div>
         </section>
@@ -172,15 +193,15 @@
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-col">
-                <img src="assets/images/logo.png" alt="NESTA SPA" style="width: 130px; margin-bottom: 24px; filter: brightness(0) invert(1);">
-                <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; line-height: 1.8;">Trải nghiệm chăm sóc sức khỏe và làm đẹp thượng lưu chuẩn 5 sao ngay tại không gian riêng tư của bạn.</p>
+                <img src="assets/images/logo.png" alt="NESTA SPA"  class="nesta-u-ncbunx">
+                <p  class="nesta-u-szfzat">Trải nghiệm chăm sóc sức khỏe và làm đẹp thượng lưu chuẩn 5 sao ngay tại không gian riêng tư của bạn.</p>
             </div>
             <div class="footer-col">
                 <h4>Thông tin liên hệ</h4>
-                <p><i data-lucide="map-pin" style="display:inline-block; vertical-align:middle; width:16px;"></i> 123 Đường ABC, Quận XYZ, TP.HCM</p>
-                <p><i data-lucide="phone" style="display:inline-block; vertical-align:middle; width:16px;"></i> Hotline: 0909 123 456</p>
-                <p><i data-lucide="mail" style="display:inline-block; vertical-align:middle; width:16px;"></i> Email: contact@nestaspa.com</p>
-                <p><i data-lucide="clock" style="display:inline-block; vertical-align:middle; width:16px;"></i> Giờ mở cửa: 09:00 - 21:00</p>
+                <p><i data-lucide="map-pin"  class="nesta-u-tsow4l"></i> 123 Đường ABC, Quận XYZ, TP.HCM</p>
+                <p><i data-lucide="phone"  class="nesta-u-tsow4l"></i> Hotline: 0909 123 456</p>
+                <p><i data-lucide="mail"  class="nesta-u-tsow4l"></i> Email: contact@nestaspa.com</p>
+                <p><i data-lucide="clock"  class="nesta-u-tsow4l"></i> Giờ mở cửa: 09:00 - 21:00</p>
             </div>
             <div class="footer-col">
                 <h4>Liên kết</h4>
@@ -202,9 +223,9 @@
             </div>
             <div class="footer-col">
                 <h4>Fanpage</h4>
-                <div style="background:#222; padding:20px; border-radius:10px; text-align:center;">
-                    <p style="color: white; font-weight: bold; margin-bottom: 12px;">Nesta Spa Fanpage</p>
-                    <a href="#" class="btn btn-outline" style="color:white; border-color:white; margin-top:10px;"><i data-lucide="facebook"></i> Theo dõi</a>
+                <div  class="nesta-u-v6ns6a">
+                    <p  class="nesta-u-iqp8c6">Nesta Spa Fanpage</p>
+                    <a href="#" class="btn btn-outline nesta-u-xegv0u" ><i data-lucide="facebook"></i> Theo dõi</a>
                 </div>
             </div>
         </div>
@@ -226,10 +247,34 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-        lucide.createIcons();
-        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('open');
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        mobileBtn.addEventListener('click', function() {
+            const isOpen = document.getElementById('mobile-menu').classList.toggle('open');
+            mobileBtn.innerHTML = isOpen ? '<i data-lucide="x"></i>' : '<i data-lucide="menu"></i>';
+            lucide.createIcons();
         });
+    
+        lucide.createIcons();
     </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

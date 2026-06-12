@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHI TIẾT DỊCH VỤ | NESTA SPA</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/utilities.css?v=1.0.13">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.0.13">
 </head>
 <body>
 
@@ -17,7 +18,16 @@
             <nav class="nav-menu">
                 <a href="trangchu.html" class="nav-link">Trang Chủ</a>
                 <a href="dichvu.html" class="nav-link active">Dịch Vụ</a>
-                <a href="banggia.html" class="nav-link">Bảng Giá</a>
+                <div class="nav-dropdown">
+                    <div class="nav-link nesta-u-16jro8" >
+                        <a href="banggia.html"  class="nesta-u-ilt95m">Bảng Giá</a>
+                        <span  class="nesta-u-y1lel2"><i data-lucide="chevron-down"  class="nesta-u-3j217i"></i></span>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="banggia.html#dich-vu-le">Dịch Vụ Lẻ</a>
+                        <a href="banggia.html#combo">Combo Trị Liệu</a>
+                    </div>
+                </div>
                 <a href="quytrinh.html" class="nav-link">Quy Trình</a>
                 <a href="lienhe.html" class="nav-link">Liên Hệ</a>
             </nav>
@@ -34,14 +44,25 @@
     <nav id="mobile-menu">
         <a href="trangchu.html" class="nav-link">Trang Chủ</a>
         <a href="dichvu.html" class="nav-link active">Dịch Vụ</a>
-        <a href="banggia.html" class="nav-link">Bảng Giá</a>
+        <div  class="nesta-u-f1onp4">
+            <div class="nav-link nesta-u-iw3sir" >
+                <a href="banggia.html"  class="nesta-u-as36sz">Bảng Giá</a>
+                <button onclick="const s=this.parentElement.nextElementSibling.style; s.setProperty('display', s.getPropertyValue('display')==='flex'?'none':'flex', 'important')"  class="nesta-u-wvlo4r">
+                    <i data-lucide="chevron-down"  class="nesta-u-ry279k"></i>
+                </button>
+            </div>
+            <div  class="nesta-u-t681bd">
+                <a href="banggia.html#dich-vu-le" class="nav-link nesta-u-fls0nb" >Dịch Vụ Lẻ</a>
+                <a href="banggia.html#combo" class="nav-link nesta-u-fls0nb" >Combo Trị Liệu</a>
+            </div>
+        </div>
         <a href="quytrinh.html" class="nav-link">Quy Trình</a>
         <a href="lienhe.html" class="nav-link">Liên Hệ</a>
-        <a href="lienhe.html" class="btn btn-primary" style="justify-content: center;">Đặt Lịch</a>
+        <a href="lienhe.html" class="btn btn-primary nesta-u-gndaom" >Đặt Lịch</a>
     </nav>
 
     <!-- Breadcrumb Banner -->
-    <section class="breadcrumb-banner" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1920&auto=format&fit=crop');">
+    <section class="breadcrumb-banner nesta-u-43jnvk" >
         <div class="breadcrumb-content">
             <h1>Chi Tiết Dịch Vụ</h1>
             <div class="breadcrumb-nav">
@@ -57,83 +78,81 @@
     <main>
         <section class="section">
             <div class="container">
-                <div class="d-flex" style="gap: 40px; flex-wrap: wrap;">
+                <div class="d-flex nesta-u-y7xvhg" >
                     
                     <!-- Left: Content & Images -->
-                    <div style="flex: 1; min-width: 300px;">
+                    <div  class="nesta-u-qykn1g">
                         <h2 class="mb-4 text-uppercase">Liệu Pháp Massage Sâu</h2>
                         
-                        <div style="border-radius: var(--border-radius); overflow: hidden; margin-bottom: 24px; aspect-ratio: 16/9;">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-g7CEQlJ6aQ9GWCIGpFMWV8ruFejVzqEil_KDDMpi8lgcAiFF2miObG_LbmYhEZzXvC136fWw6rkrFbOvcP9Q15-6URJh5hcSjG38KaaKlHBhQMOj128LMxJ6sBws6PEcVZe0gf-iLO6yNAMj5vVkptkEDEGrefNnKn7tJ6-pyxY6ERE7CSVtbEzBCsKsJLDEgP_Ko9KCfXaqTAUwFS1tBhQq4O25whOxsOGUMxKJuPd6kG8Vs9UuiUh0O80HcusqeRZNXPdBrpY" 
-                                 alt="Deep Tissue Massage" 
-                                 style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: var(--transition);">
+                        <div  class="nesta-u-yf5kg9">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-g7CEQlJ6aQ9GWCIGpFMWV8ruFejVzqEil_KDDMpi8lgcAiFF2miObG_LbmYhEZzXvC136fWw6rkrFbOvcP9Q15-6URJh5hcSjG38KaaKlHBhQMOj128LMxJ6sBws6PEcVZe0gf-iLO6yNAMj5vVkptkEDEGrefNnKn7tJ6-pyxY6ERE7CSVtbEzBCsKsJLDEgP_Ko9KCfXaqTAUwFS1tBhQq4O25whOxsOGUMxKJuPd6kG8Vs9UuiUh0O80HcusqeRZNXPdBrpY" alt="Deep Tissue Massage"  class="nesta-u-y0ibn8">
                         </div>
 
-                        <div style="color: var(--text-secondary); line-height: 1.8;">
+                        <div  class="nesta-u-g6qfw3">
                             <p class="mb-4">
                                 Được thiết kế dành riêng cho những cơ thể mệt mỏi sau thời gian dài làm việc căng thẳng. Liệu pháp Massage Sâu sử dụng các kỹ thuật ấn huyệt và miết dọc theo các bó cơ, tập trung vào những vùng đau nhức mãn tính, giúp giải phóng hoàn toàn sự căng cứng tích tụ.
                             </p>
                             
                             <h3 class="mb-4 mt-8">Lợi ích mang lại</h3>
-                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 16px;">
-                                <li style="display: flex; gap: 12px; align-items: flex-start;">
-                                    <i data-lucide="check-circle-2" style="color: var(--text-primary); flex-shrink: 0; margin-top: 2px;"></i>
+                            <ul  class="nesta-u-74z9z0">
+                                <li  class="nesta-u-fp77ls">
+                                    <i data-lucide="check-circle-2"  class="nesta-u-ns1pas"></i>
                                     <span>Giảm căng cơ và đau nhức mãn tính ở vùng cổ, vai, gáy và thắt lưng.</span>
                                 </li>
-                                <li style="display: flex; gap: 12px; align-items: flex-start;">
-                                    <i data-lucide="check-circle-2" style="color: var(--text-primary); flex-shrink: 0; margin-top: 2px;"></i>
+                                <li  class="nesta-u-fp77ls">
+                                    <i data-lucide="check-circle-2"  class="nesta-u-ns1pas"></i>
                                     <span>Tăng cường lưu thông tuần hoàn máu, hỗ trợ phục hồi năng lượng từ bên trong.</span>
                                 </li>
-                                <li style="display: flex; gap: 12px; align-items: flex-start;">
-                                    <i data-lucide="check-circle-2" style="color: var(--text-primary); flex-shrink: 0; margin-top: 2px;"></i>
+                                <li  class="nesta-u-fp77ls">
+                                    <i data-lucide="check-circle-2"  class="nesta-u-ns1pas"></i>
                                     <span>Cải thiện chất lượng giấc ngủ và giảm thiểu mệt mỏi tinh thần.</span>
                                 </li>
                             </ul>
 
-                            <div class="d-flex" style="gap: 20px; margin-top: 40px;">
-                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkvSyWlMRDtUdwIKJp7_saLIxUixN-3Sc2J9zopmA7aVn6i1g2BxJcU-Wmz-s7qLO34vJUGjVOwmqPGuJgZ5IIXhOfQYdEG3i1wjkA3HSgok7ib2HRfLPYghZaEZvcOSWICsffjWIPbk09SqoPm8AN6nJGQOX_SJD3d-Bv6i2nVn1pA9F7UiFHeHYdiqq0j15WsPv4XqOVenKrdA_xJT9VrO6kWnA7smyNmExabBzvqnpAwJByGgh2Cht19e7czioAmPf9D15sOXg" style="flex:1; width:50%; aspect-ratio:1; object-fit:cover; border-radius: var(--border-radius); filter: grayscale(100%);" alt="Spa Detail">
-                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgWkjgXrSeJbA7cmQkpZgtJPsMWBLze5ybg-tnL8Fa8ZgzfVpAx4CqECWfcHlvxuZ14UZ6KABpZIpfIK6OVC4r102qfsKuEfHc3cxmOZKnFPMNzLkG-rbzVw-Evdv3QXX-8KUMbo4yJFaXayf9q6cp1xeERA3zys2bfGSn7t-GjQ0qFs2sCuoNUYpqeGADS7VYj-hj1qp3Z3U3Sn0doGB-YK7WhkBfms3H0orExiToO0R25jitBf9Dro6dLLsTEAY2qW586pSw2U8" style="flex:1; width:50%; aspect-ratio:1; object-fit:cover; border-radius: var(--border-radius); filter: grayscale(100%);" alt="Spa Detail">
+                            <div class="d-flex nesta-u-7ujddr" >
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkvSyWlMRDtUdwIKJp7_saLIxUixN-3Sc2J9zopmA7aVn6i1g2BxJcU-Wmz-s7qLO34vJUGjVOwmqPGuJgZ5IIXhOfQYdEG3i1wjkA3HSgok7ib2HRfLPYghZaEZvcOSWICsffjWIPbk09SqoPm8AN6nJGQOX_SJD3d-Bv6i2nVn1pA9F7UiFHeHYdiqq0j15WsPv4XqOVenKrdA_xJT9VrO6kWnA7smyNmExabBzvqnpAwJByGgh2Cht19e7czioAmPf9D15sOXg" alt="Spa Detail" class="nesta-u-qnn4yq">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgWkjgXrSeJbA7cmQkpZgtJPsMWBLze5ybg-tnL8Fa8ZgzfVpAx4CqECWfcHlvxuZ14UZ6KABpZIpfIK6OVC4r102qfsKuEfHc3cxmOZKnFPMNzLkG-rbzVw-Evdv3QXX-8KUMbo4yJFaXayf9q6cp1xeERA3zys2bfGSn7t-GjQ0qFs2sCuoNUYpqeGADS7VYj-hj1qp3Z3U3Sn0doGB-YK7WhkBfms3H0orExiToO0R25jitBf9Dro6dLLsTEAY2qW586pSw2U8" alt="Spa Detail" class="nesta-u-qnn4yq">
                             </div>
                         </div>
                     </div>
 
                     <!-- Right: Sticky Booking Card -->
-                    <div style="width: 100%; max-width: 400px; position: sticky; top: 100px; align-self: flex-start; background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 24px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                        <div style="border-bottom: 1px solid var(--border-light); padding-bottom: 24px; margin-bottom: 24px;">
+                    <div  class="nesta-u-cjgu36">
+                        <div  class="nesta-u-kb57mj">
                             <h3 class="mb-2">Thông tin dịch vụ</h3>
-                            <p style="color: var(--text-secondary); font-size: 0.875rem;">Liệu trình chăm sóc đặc biệt tại gia</p>
+                            <p  class="nesta-u-7ippi9">Liệu trình chăm sóc đặc biệt tại gia</p>
                         </div>
                         
                         <div class="d-flex justify-content-between align-items-start mb-8">
-                            <div class="d-flex flex-column" style="gap: 4px;">
-                                <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); font-weight: bold;">Thời gian</span>
-                                <span style="font-size: 1.25rem; font-weight: 600;">90 Phút</span>
+                            <div class="d-flex flex-column nesta-u-1phmev" >
+                                <span  class="nesta-u-ytpcxq">Thời gian</span>
+                                <span  class="nesta-u-q5iypi">90 Phút</span>
                             </div>
-                            <div class="d-flex flex-column" style="gap: 4px; text-align: right;">
-                                <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); font-weight: bold;">Chi phí</span>
-                                <span style="font-size: 2rem; font-weight: bold;">$180</span>
+                            <div class="d-flex flex-column nesta-u-tlyr9v" >
+                                <span  class="nesta-u-ytpcxq">Chi phí</span>
+                                <span  class="nesta-u-ho8e7u">$180</span>
                             </div>
                         </div>
 
-                        <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px;">
-                            <div class="d-flex align-items-center" style="gap: 12px; color: var(--text-secondary); font-size: 0.875rem;">
-                                <i data-lucide="droplets" style="width: 20px; height: 20px;"></i>
+                        <div  class="nesta-u-i2un06">
+                            <div class="d-flex align-items-center nesta-u-nk8qdc" >
+                                <i data-lucide="droplets"  class="nesta-u-ynazs9"></i>
                                 <span>Tinh dầu organic nhập khẩu</span>
                             </div>
-                            <div class="d-flex align-items-center" style="gap: 12px; color: var(--text-secondary); font-size: 0.875rem;">
-                                <i data-lucide="music" style="width: 20px; height: 20px;"></i>
+                            <div class="d-flex align-items-center nesta-u-nk8qdc" >
+                                <i data-lucide="music"  class="nesta-u-ynazs9"></i>
                                 <span>Âm nhạc thư giãn độc quyền</span>
                             </div>
-                            <div class="d-flex align-items-center" style="gap: 12px; color: var(--text-secondary); font-size: 0.875rem;">
-                                <i data-lucide="bed-double" style="width: 20px; height: 20px;"></i>
+                            <div class="d-flex align-items-center nesta-u-nk8qdc" >
+                                <i data-lucide="bed-double"  class="nesta-u-ynazs9"></i>
                                 <span>Setup giường massage chuẩn 5 sao</span>
                             </div>
                         </div>
 
-                        <a href="lienhe.html" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 16px; font-size: 1rem; border-radius: 50px;">
+                        <a href="lienhe.html" class="btn btn-primary nesta-u-nod74g" >
                             ĐẶT LỊCH NGAY
                         </a>
-                        <p style="text-align: center; font-size: 0.75rem; color: var(--text-secondary); margin-top: 16px;">Chuyên viên của chúng tôi sẽ có mặt trong vòng 60 phút.</p>
+                        <p  class="nesta-u-8vj8qy">Chuyên viên của chúng tôi sẽ có mặt trong vòng 60 phút.</p>
                     </div>
 
                 </div>
@@ -145,15 +164,15 @@
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-col">
-                <img src="assets/images/logo.png" alt="NESTA SPA" style="width: 130px; margin-bottom: 24px; filter: brightness(0) invert(1);">
-                <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; line-height: 1.8;">Trải nghiệm chăm sóc sức khỏe và làm đẹp thượng lưu chuẩn 5 sao ngay tại không gian riêng tư của bạn.</p>
+                <img src="assets/images/logo.png" alt="NESTA SPA"  class="nesta-u-ncbunx">
+                <p  class="nesta-u-szfzat">Trải nghiệm chăm sóc sức khỏe và làm đẹp thượng lưu chuẩn 5 sao ngay tại không gian riêng tư của bạn.</p>
             </div>
             <div class="footer-col">
                 <h4>Thông tin liên hệ</h4>
-                <p><i data-lucide="map-pin" style="display:inline-block; vertical-align:middle; width:16px;"></i> 123 Đường ABC, Quận XYZ, TP.HCM</p>
-                <p><i data-lucide="phone" style="display:inline-block; vertical-align:middle; width:16px;"></i> Hotline: 0909 123 456</p>
-                <p><i data-lucide="mail" style="display:inline-block; vertical-align:middle; width:16px;"></i> Email: contact@nestaspa.com</p>
-                <p><i data-lucide="clock" style="display:inline-block; vertical-align:middle; width:16px;"></i> Giờ mở cửa: 09:00 - 21:00</p>
+                <p><i data-lucide="map-pin"  class="nesta-u-tsow4l"></i> 123 Đường ABC, Quận XYZ, TP.HCM</p>
+                <p><i data-lucide="phone"  class="nesta-u-tsow4l"></i> Hotline: 0909 123 456</p>
+                <p><i data-lucide="mail"  class="nesta-u-tsow4l"></i> Email: contact@nestaspa.com</p>
+                <p><i data-lucide="clock"  class="nesta-u-tsow4l"></i> Giờ mở cửa: 09:00 - 21:00</p>
             </div>
             <div class="footer-col">
                 <h4>Liên kết</h4>
@@ -175,9 +194,9 @@
             </div>
             <div class="footer-col">
                 <h4>Fanpage</h4>
-                <div style="background:#222; padding:20px; border-radius:10px; text-align:center;">
-                    <p style="color: white; font-weight: bold; margin-bottom: 12px;">Nesta Spa Fanpage</p>
-                    <a href="#" class="btn btn-outline" style="color:white; border-color:white; margin-top:10px;"><i data-lucide="facebook"></i> Theo dõi</a>
+                <div  class="nesta-u-v6ns6a">
+                    <p  class="nesta-u-iqp8c6">Nesta Spa Fanpage</p>
+                    <a href="#" class="btn btn-outline nesta-u-xegv0u" ><i data-lucide="facebook"></i> Theo dõi</a>
                 </div>
             </div>
         </div>
@@ -199,10 +218,33 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-        lucide.createIcons();
-        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('open');
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        mobileBtn.addEventListener('click', function() {
+            const isOpen = document.getElementById('mobile-menu').classList.toggle('open');
+            mobileBtn.innerHTML = isOpen ? '<i data-lucide="x"></i>' : '<i data-lucide="menu"></i>';
+            lucide.createIcons();
         });
+    
+        lucide.createIcons();
     </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
