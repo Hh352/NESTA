@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let matchFound = false;
   navLinks.forEach(link => {
     const href = link.getAttribute('href');
-    if (pageName === href || (pageName === '' && href === 'trangchu.html')) {
+    if (pageName === href || (pageName === '' && href === 'index.html')) {
       link.classList.add('active');
       matchFound = true;
     } else {
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!matchFound && navLinks.length > 0) {
     // If it's index or home page in general
     if (pageName.includes('index') || pageName === '') {
-      const homeLink = Array.from(navLinks).find(link => link.getAttribute('href') === 'trangchu.html');
+      const homeLink = Array.from(navLinks).find(link => link.getAttribute('href') === 'index.html');
       if (homeLink) homeLink.classList.add('active');
     }
   }
