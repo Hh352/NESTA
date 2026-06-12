@@ -1,358 +1,301 @@
-﻿<!DOCTYPE html>
-<html class="light" lang="en">
-
+<!DOCTYPE html>
+<html lang="vi">
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <title>Quy trình Trải nghiệm Tinh tế | NESTA SPA</title>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-variant": "#e3e2e2",
-                        "tertiary-fixed-dim": "#c6c6c7",
-                        "secondary-fixed-dim": "#c6c6c7",
-                        "on-secondary-fixed-variant": "#454747",
-                        "secondary-fixed": "#e2e2e2",
-                        "tertiary": "#000000",
-                        "on-surface": "#1b1c1c",
-                        "inverse-primary": "#c6c6c6",
-                        "on-error": "#ffffff",
-                        "on-error-container": "#93000a",
-                        "on-secondary-fixed": "#1a1c1c",
-                        "on-tertiary-fixed": "#1a1c1c",
-                        "tertiary-fixed": "#e2e2e2",
-                        "on-secondary": "#ffffff",
-                        "inverse-on-surface": "#f2f0f0",
-                        "surface-bright": "#fbf9f9",
-                        "surface-container-high": "#e9e8e7",
-                        "secondary-container": "#dfe0e0",
-                        "on-background": "#1b1c1c",
-                        "surface-container-highest": "#e3e2e2",
-                        "primary": "#000000",
-                        "surface-dim": "#dbdad9",
-                        "on-primary-fixed": "#1b1b1b",
-                        "outline": "#7e7576",
-                        "inverse-surface": "#303031",
-                        "surface-container": "#efeded",
-                        "error-container": "#ffdad6",
-                        "on-secondary-container": "#616363",
-                        "on-tertiary-container": "#838484",
-                        "on-primary-fixed-variant": "#474747",
-                        "on-primary-container": "#848484",
-                        "outline-variant": "#cfc4c5",
-                        "surface-container-low": "#f5f3f3",
-                        "background": "#fbf9f9",
-                        "on-primary": "#ffffff",
-                        "primary-fixed-dim": "#c6c6c6",
-                        "on-tertiary": "#ffffff",
-                        "primary-fixed": "#e2e2e2",
-                        "error": "#ba1a1a",
-                        "secondary": "#5d5f5f",
-                        "on-surface-variant": "#4c4546",
-                        "tertiary-container": "#1a1c1c",
-                        "on-tertiary-fixed-variant": "#454747",
-                        "primary-container": "#1b1b1b",
-                        "surface-container-lowest": "#ffffff",
-                        "surface": "#fbf9f9",
-                        "surface-tint": "#5e5e5e"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "1rem",
-                        "lg": "2rem",
-                        "xl": "3rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "unit": "8px",
-                        "stack-sm": "8px",
-                        "container-padding-desktop": "64px",
-                        "gutter": "24px",
-                        "stack-md": "16px",
-                        "container-padding-mobile": "24px",
-                        "stack-lg": "32px"
-                    },
-                    "fontFamily": {
-                        "headline-md": ["Bitter"],
-                        "display-lg": ["Bitter"],
-                        "headline-lg-mobile": ["Bitter"],
-                        "label-sm": ["Bitter"],
-                        "headline-lg": ["Bitter"],
-                        "body-lg": ["Bitter"],
-                        "label-lg": ["Bitter"],
-                        "body-md": ["Bitter"]
-                    },
-                    "fontSize": {
-                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "400" }],
-                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
-                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "400" }],
-                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }],
-                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "400" }],
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "label-lg": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
-                    }
-                }
-            }
-        }
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUY TRÌNH | NESTA SPA</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        .soft-shadow-1 {
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+        .step-card {
+            text-align: center;
+            padding: 30px;
+            position: relative;
+            z-index: 1;
         }
-
-        .soft-shadow-2 {
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        .step-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: white;
+            border: 1px solid var(--border-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: var(--transition);
         }
-
-        .soft-shadow-3 {
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+        .step-card:hover .step-icon {
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+            background: var(--bg-dark);
+            color: var(--text-light);
         }
-
-        .pill-active {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
         .step-line {
-            background: linear-gradient(to bottom, #000 50%, transparent 50%);
-            background-size: 1px 20px;
+            position: relative;
         }
-
-        @media (min-width: 768px) {
-            .step-line-h {
-                background: linear-gradient(to right, #000 50%, transparent 50%);
-                background-size: 20px 1px;
+        .step-line::before {
+            content: '';
+            position: absolute;
+            top: 70px;
+            left: 10%;
+            right: 10%;
+            height: 1px;
+            background: linear-gradient(to right, var(--text-primary) 50%, transparent 50%);
+            background-size: 20px 1px;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        @media (max-width: 768px) {
+            .step-line::before {
+                display: none;
             }
+        }
+        .prep-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+        .prep-card:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        .prep-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: white;
+            transition: var(--transition);
+        }
+        .prep-card:hover .prep-icon {
+            background: white;
+            color: black;
         }
     </style>
 </head>
+<body>
 
-<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-primary">
-    <!-- Mobile Menu Checkbox Hack -->
-    <input type="checkbox" id="mobile-menu-toggle" class="hidden peer">
-    
-    <!-- Mobile Overlay -->
-    <label for="mobile-menu-toggle" class="fixed inset-0 bg-black/50 z-40 hidden peer-checked:block md:peer-checked:hidden cursor-pointer backdrop-blur-sm transition-opacity"></label>
-
-    <!-- Mobile Slidebar -->
-    <div class="fixed top-0 right-0 h-full w-64 bg-surface z-50 shadow-2xl transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 flex flex-col px-6 py-8 md:hidden">
-                <div class="flex justify-between items-center mb-8">
-            <a href="trangchu.html" class="block">
-                <img src="assets/images/logo.png" alt="NESTA SPA" class="h-16 w-auto object-contain scale-[1.3] origin-left">
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="trangchu.html" class="logo">
+                <img src="assets/images/logo.png" alt="NESTA SPA">
             </a>
-            <label for="mobile-menu-toggle" class="cursor-pointer text-primary">
-                <span class="material-symbols-outlined text-[28px]">close</span>
-            </label>
+            <nav class="nav-menu">
+                <a href="trangchu.html" class="nav-link">Trang Chủ</a>
+                <a href="dichvu.html" class="nav-link">Dịch Vụ</a>
+                <a href="banggia.html" class="nav-link">Bảng Giá</a>
+                <a href="quytrinh.html" class="nav-link active">Quy Trình</a>
+                <a href="lienhe.html" class="nav-link">Liên Hệ</a>
+            </nav>
+            <div class="header-actions">
+                <a href="lienhe.html" class="btn btn-primary">Đặt Lịch</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
         </div>
-        <div class="mb-6 font-label-sm uppercase tracking-widest text-secondary font-bold border-b border-surface-variant pb-2">Menu</div>
-        <div class="flex flex-col gap-6">
-            <a href="trangchu.html" class="font-body-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors">Trang Chủ</a>
-            <a href="dichvu.html" class="font-body-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors">Dịch Vụ</a>
-            <a href="banggia.html" class="font-body-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors">Bảng Giá</a>
-            <a href="quytrinh.html" class="font-body-lg uppercase tracking-widest text-primary font-bold border-b border-primary pb-2 w-max">Quy Trình</a>
-            <a href="lienhe.html" class="font-body-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors">Liên Hệ</a>
-        </div>
-    </div>
+    </header>
 
-    <!-- Top Navigation Bar -->
-    <nav class="bg-surface/80 backdrop-blur-md dark:bg-surface-container/80 fixed top-0 w-full z-30 border-b border-surface-variant dark:border-outline-variant/20 shadow-sm h-20">
-        <div class="flex justify-between items-center px-4 md:px-container-padding-desktop h-full max-w-[1280px] mx-auto gap-4">
-            <div class="flex items-center shrink-0 w-[120px] md:w-[160px]">
-                <a href="trangchu.html" class="block">
-                    <img src="assets/images/logo.png" alt="NESTA SPA" class="h-16 md:h-20 w-auto object-contain scale-[1.3] origin-left">
-                </a>
-            </div>
-            
-            <!-- Desktop Menu -->
-            <div class="max-lg:hidden flex flex-1 justify-center gap-8 items-center">
-                <a href="trangchu.html" class="font-body-md text-body-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300">Trang Chủ</a>
-                <a href="dichvu.html" class="font-body-md text-body-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300">Dịch Vụ</a>
-                <a href="banggia.html" class="font-body-md text-body-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300">Bảng Giá</a>
-                <a href="quytrinh.html" class="font-body-md text-body-md uppercase tracking-widest text-primary font-bold border-b border-primary pb-1 transition-colors duration-300">Quy Trình</a>
-                <a href="lienhe.html" class="font-body-md text-body-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300">Liên Hệ</a>
-            </div>
-            
-            <!-- Actions -->
-            <div class="flex items-center justify-end shrink-0 gap-4">
-                <a href="lienhe.html" class="bg-primary text-on-primary px-4 md:px-stack-lg py-2 md:py-3 rounded-full font-label-lg text-[10px] md:text-label-lg uppercase tracking-wider transition-transform duration-200 active:scale-90 text-center whitespace-nowrap">Đặt Lịch</a>
-                <!-- Hamburger Button for Mobile -->
-                <label for="mobile-menu-toggle" class="lg:hidden cursor-pointer text-primary flex items-center">
-                    <span class="material-symbols-outlined text-[28px]">menu</span>
-                </label>
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu">
+        <a href="trangchu.html" class="nav-link">Trang Chủ</a>
+        <a href="dichvu.html" class="nav-link">Dịch Vụ</a>
+        <a href="banggia.html" class="nav-link">Bảng Giá</a>
+        <a href="quytrinh.html" class="nav-link active">Quy Trình</a>
+        <a href="lienhe.html" class="nav-link">Liên Hệ</a>
+        <a href="lienhe.html" class="btn btn-primary" style="justify-content: center;">Đặt Lịch</a>
+    </nav>
+
+    <!-- Breadcrumb Banner -->
+    <section class="breadcrumb-banner" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1920&auto=format&fit=crop');">
+        <div class="breadcrumb-content">
+            <h1>Quy Trình</h1>
+            <div class="breadcrumb-nav">
+                <a href="trangchu.html">Trang Chủ</a>
+                <span>/</span>
+                Quy Trình
             </div>
         </div>
-    </nav>
-    <main class="pt-32 pb-stack-lg">
-        <!-- Hero Section -->
-        <header class="max-w-[1280px] mx-auto px-gutter md:px-container-padding-desktop mb-24">
-            <div class="flex flex-col items-center text-center max-w-2xl mx-auto">
-                <span class="font-label-lg text-label-lg text-secondary uppercase tracking-[0.2em] mb-4">The
-                    Journey</span>
-                <h1
-                    class="font-headline-lg md:font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-8">
-                    Quy trình Trải nghiệm Tinh tế</h1>
-                <p class="font-body-lg text-body-lg text-secondary">Một hành trình hài hòa được thiết kế để phục hồi
-                    tuyệt đối, từ bước chạm đầu tiên cho đến hơi thở cuối cùng trong không gian riêng của bạn.</p>
+    </section>
+
+    <main>
+        <!-- Intro -->
+        <section class="section text-center">
+            <div class="container">
+                <span class="text-uppercase" style="letter-spacing: 2px; color: var(--text-secondary); font-size: 0.875rem; font-weight: bold;">The Journey</span>
+                <h2 class="mt-4 mb-6">Quy trình Trải nghiệm Tinh tế</h2>
+                <p class="mb-8" style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; line-height: 1.8;">
+                    Một hành trình hài hòa được thiết kế để phục hồi tuyệt đối, từ bước chạm đầu tiên cho đến hơi thở cuối cùng trong không gian riêng của bạn.
+                </p>
             </div>
-        </header>
-        <!-- Process Journey Section -->
-        <section class="max-w-[1280px] mx-auto px-gutter md:px-container-padding-desktop mb-32">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
-                <!-- Desktop Connection Line -->
-                <div class="hidden md:block absolute top-12 left-0 w-full h-[1px] step-line-h z-0 opacity-20"></div>
-                <!-- Step 1 -->
-                <div class="relative z-10 flex flex-col items-center text-center group">
-                    <div
-                        class="w-24 h-24 rounded-full bg-surface-container-lowest border border-surface-variant flex items-center justify-center mb-stack-lg soft-shadow-2 group-hover:soft-shadow-3 transition-all duration-500 bg-white">
-                        <span class="material-symbols-outlined text-primary text-3xl"
-                            data-icon="calendar_month">calendar_month</span>
-                    </div>
-                    <h3 class="font-headline-md text-headline-md text-primary mb-2">01. Đặt lịch</h3>
-                    <p class="text-secondary font-body-md leading-relaxed px-4">Chọn dịch vụ và thời gian mong muốn
-                        thông qua hệ thống đặt lịch trực tuyến của chúng tôi.</p>
-                </div>
-                <!-- Step 2 -->
-                <div class="relative z-10 flex flex-col items-center text-center group">
-                    <div
-                        class="w-24 h-24 rounded-full bg-surface-container-lowest border border-surface-variant flex items-center justify-center mb-stack-lg soft-shadow-2 group-hover:soft-shadow-3 transition-all duration-500 bg-white">
-                        <span class="material-symbols-outlined text-primary text-3xl"
-                            data-icon="confirmation_number">confirmation_number</span>
-                    </div>
-                    <h3 class="font-headline-md text-headline-md text-primary mb-2">02. Xác nhận</h3>
-                    <p class="text-secondary font-body-md leading-relaxed px-4">Nhận thông báo xác nhận và chuẩn bị cho
-                        buổi liệu trình thông qua quản gia kỹ thuật số.</p>
-                </div>
-                <!-- Step 3 -->
-                <div class="relative z-10 flex flex-col items-center text-center group">
-                    <div
-                        class="w-24 h-24 rounded-full bg-surface-container-lowest border border-surface-variant flex items-center justify-center mb-stack-lg soft-shadow-2 group-hover:soft-shadow-3 transition-all duration-500 bg-white">
-                        <span class="material-symbols-outlined text-primary text-3xl"
-                            data-icon="travel_explore">travel_explore</span>
-                    </div>
-                    <h3 class="font-headline-md text-headline-md text-primary mb-2">03. Bắt đầu</h3>
-                    <p class="text-secondary font-body-md leading-relaxed px-4">Chuyên viên trị liệu của chúng tôi sẽ
-                        đến tận nơi với đầy đủ trang thiết bị, mùi hương và tinh dầu cao cấp.</p>
-                </div>
-                <!-- Step 4 -->
-                <div class="relative z-10 flex flex-col items-center text-center group">
-                    <div
-                        class="w-24 h-24 rounded-full bg-primary flex items-center justify-center mb-stack-lg soft-shadow-3 group-hover:scale-105 transition-all duration-500">
-                        <span class="material-symbols-outlined text-on-primary text-3xl" data-icon="spa"
-                            style="font-variation-settings: 'FILL' 1;">spa</span>
-                    </div>
-                    <h3 class="font-headline-md text-headline-md text-primary mb-2">04. Tận hưởng</h3>
-                    <p class="text-secondary font-body-md leading-relaxed px-4">Đắm mình trong trải nghiệm spa 5 sao
-                        tiêu chuẩn quốc tế ngay tại không gian an toàn và riêng tư của bạn.</p>
-                </div>
-            </div>
-        </section>
-        <!-- Preparation Bento Grid -->
-        <section class="max-w-[1280px] mx-auto px-gutter md:px-container-padding-desktop">
-            <div class="bg-[#0f0f0f] text-white rounded-xl p-stack-lg md:p-16 border border-white/10">
-                <div class="flex flex-col md:flex-row justify-between items-end gap-stack-lg mb-16">
-                    <div class="max-w-xl">
-                        <h2 class="font-headline-lg text-headline-lg text-white mb-4">Sự chuẩn bị</h2>
-                        <p class="text-white/70 font-body-md">Tạo ra môi trường hoàn hảo để tối đa hóa lợi ích trị
-                            liệu.</p>
-                    </div>
-                    <div class="hidden md:block">
-                        <button
-                            class="border border-white/50 text-white px-stack-lg py-3 rounded-full font-label-lg hover:bg-white hover:text-black transition-all duration-300">Xem
-                            hướng dẫn chi tiết</button>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
-                    <!-- Card 1: Quiet Space -->
-                    <div
-                        class="bg-white/5 rounded-lg p-stack-lg border border-white/10 soft-shadow-2 hover:bg-white/10 transition-all duration-300 group">
-                        <div
-                            class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-6 group-hover:bg-white transition-colors duration-300">
-                            <span class="material-symbols-outlined text-white group-hover:text-black"
-                                data-icon="volume_off">volume_off</span>
+            
+            <div class="container step-line" style="margin-top: 60px;">
+                <div class="d-flex flex-wrap" style="gap: 30px;">
+                    <!-- Step 1 -->
+                    <div class="step-card" style="flex: 1; min-width: 200px;">
+                        <div class="step-icon">
+                            <i data-lucide="calendar" style="width: 32px; height: 32px;"></i>
                         </div>
-                        <h4 class="font-headline-md text-headline-md text-white mb-3">Không gian yên tĩnh</h4>
-                        <p class="text-white/70 font-body-md leading-relaxed">Chuẩn bị một khu vực trống khoảng 2x3
-                            mét. Giảm ánh sáng và hạn chế tiếng ồn từ bên ngoài.</p>
+                        <h3 class="mb-3">01. Đặt lịch</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">Chọn dịch vụ và thời gian mong muốn thông qua hệ thống đặt lịch trực tuyến của chúng tôi.</p>
                     </div>
-                    <!-- Card 2: Temperature -->
-                    <div
-                        class="bg-white/5 rounded-lg p-stack-lg border border-white/10 soft-shadow-2 hover:bg-white/10 transition-all duration-300 group">
-                        <div
-                            class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-6 group-hover:bg-white transition-colors duration-300">
-                            <span class="material-symbols-outlined text-white group-hover:text-black"
-                                data-icon="thermostat">thermostat</span>
+                    
+                    <!-- Step 2 -->
+                    <div class="step-card" style="flex: 1; min-width: 200px;">
+                        <div class="step-icon">
+                            <i data-lucide="check-circle" style="width: 32px; height: 32px;"></i>
                         </div>
-                        <h4 class="font-headline-md text-headline-md text-white mb-3">Nhiệt độ</h4>
-                        <p class="text-white/70 font-body-md leading-relaxed">Đảm bảo nhiệt độ phòng ấm áp (24–26°C).
-                            Cơ thể sẽ hạ nhiệt tự nhiên trong quá trình thư giãn sâu.</p>
+                        <h3 class="mb-3">02. Xác nhận</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">Nhận thông báo xác nhận và chuẩn bị cho buổi liệu trình thông qua quản gia kỹ thuật số.</p>
                     </div>
-                    <!-- Card 3: Attire -->
-                    <div
-                        class="bg-white/5 rounded-lg p-stack-lg border border-white/10 soft-shadow-2 hover:bg-white/10 transition-all duration-300 group">
-                        <div
-                            class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-6 group-hover:bg-white transition-colors duration-300">
-                            <span class="material-symbols-outlined text-white group-hover:text-black"
-                                data-icon="checkroom">checkroom</span>
+
+                    <!-- Step 3 -->
+                    <div class="step-card" style="flex: 1; min-width: 200px;">
+                        <div class="step-icon">
+                            <i data-lucide="truck" style="width: 32px; height: 32px;"></i>
                         </div>
-                        <h4 class="font-headline-md text-headline-md text-white mb-3">Trang phục</h4>
-                        <p class="text-white/70 font-body-md leading-relaxed">Tắm sạch trước khi chuyên viên đến và mặc
-                            áo choàng nhẹ. Chúng tôi cung cấp khăn trải hữu cơ cao cấp cho buổi trị liệu.</p>
+                        <h3 class="mb-3">03. Bắt đầu</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">Chuyên viên trị liệu của chúng tôi sẽ đến tận nơi với đầy đủ trang thiết bị, mùi hương và tinh dầu cao cấp.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="step-card" style="flex: 1; min-width: 200px;">
+                        <div class="step-icon">
+                            <i data-lucide="sparkles" style="width: 32px; height: 32px;"></i>
+                        </div>
+                        <h3 class="mb-3">04. Tận hưởng</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">Đắm mình trong trải nghiệm spa 5 sao tiêu chuẩn quốc tế ngay tại không gian an toàn và riêng tư của bạn.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Aesthetic Visual Break -->
-        <section class="mt-32 px-gutter md:px-0">
-            <div class="w-full h-[500px] overflow-hidden relative md:rounded-none rounded-xl">
-                <img alt="Minimalist Spa Aesthetic" class="w-full h-full object-cover"
-                    data-alt="A serene, high-end home spa setup featuring a minimalist massage table covered in crisp white organic linens. Soft sunlight streams through sheer white curtains, casting gentle shadows on a polished concrete floor. A single white orchid in a matte ceramic vase sits on a low wooden stool nearby. The entire scene is bathed in a soft, airy light-mode aesthetic, utilizing a monochrome palette of whites and soft greys for an atmosphere of absolute luxury and calm."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxWoUe8o0niUb-AKrRpZ64U9ac8zE1JWMgAMUrK5fGOHtihWppmLLL3aLVwIcrP3HG8vRJ4geCUshozfje52e9d0VfPwrPIdYbPkaPsgpkoJbdmDlIqBzYb43i48O--3xC_mX4pudvgeS1wawnHfzEovQMQE1K6cXE6UnZ3SQlGz6Ih2hHJ1trummv0ubggM1e1P9VC6edgkwQOlQJgQdHT2t9jMNSNf-TkkUpsbxzoj3cAIBc16VXB6qH8q6ELjrT_iWV-0cl3BI">
-                <div class="absolute inset-0 bg-primary/5 flex items-center justify-center">
-                    <div
-                        class="bg-white/80 backdrop-blur-md p-stack-lg md:p-12 rounded-lg border border-white/20 text-center max-w-lg mx-gutter">
-                        <p class="font-headline-md italic text-primary">"Sức khỏe không phải là đích đến, mà là một hành
-                            trình được chăm chút của các giác quan."</p>
+
+        <!-- Preparation -->
+        <section class="section pt-0">
+            <div class="container">
+                <div style="background: #111; color: white; border-radius: var(--border-radius); padding: 60px 40px;">
+                    <div class="d-flex justify-content-between align-items-start mb-8 flex-wrap" style="gap: 20px;">
+                        <div style="max-width: 500px;">
+                            <h2 class="mb-4" style="color: white;">Sự chuẩn bị</h2>
+                            <p style="color: rgba(255,255,255,0.7);">Tạo ra môi trường hoàn hảo để tối đa hóa lợi ích trị liệu.</p>
+                        </div>
+                        <a href="lienhe.html" class="btn btn-outline" style="color: white; border-color: rgba(255,255,255,0.5);">Đặt Lịch Ngay</a>
+                    </div>
+                    
+                    <div class="d-flex flex-wrap" style="gap: 30px;">
+                        <!-- Prep 1 -->
+                        <div class="prep-card" style="flex: 1; min-width: 250px;">
+                            <div class="prep-icon">
+                                <i data-lucide="volume-x"></i>
+                            </div>
+                            <h4 class="mb-3" style="color: white;">Không gian yên tĩnh</h4>
+                            <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; line-height: 1.6;">Chuẩn bị một khu vực trống khoảng 2x3 mét. Giảm ánh sáng và hạn chế tiếng ồn từ bên ngoài.</p>
+                        </div>
+                        
+                        <!-- Prep 2 -->
+                        <div class="prep-card" style="flex: 1; min-width: 250px;">
+                            <div class="prep-icon">
+                                <i data-lucide="thermometer"></i>
+                            </div>
+                            <h4 class="mb-3" style="color: white;">Nhiệt độ</h4>
+                            <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; line-height: 1.6;">Đảm bảo nhiệt độ phòng ấm áp (24–26°C). Cơ thể sẽ hạ nhiệt tự nhiên trong quá trình thư giãn sâu.</p>
+                        </div>
+
+                        <!-- Prep 3 -->
+                        <div class="prep-card" style="flex: 1; min-width: 250px;">
+                            <div class="prep-icon">
+                                <i data-lucide="shirt"></i>
+                            </div>
+                            <h4 class="mb-3" style="color: white;">Trang phục</h4>
+                            <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; line-height: 1.6;">Tắm sạch trước khi chuyên viên đến và mặc áo choàng nhẹ. Chúng tôi cung cấp khăn trải hữu cơ cao cấp cho buổi trị liệu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote visual -->
+        <section class="section pt-0 pb-0">
+            <div style="position: relative; height: 400px; overflow: hidden;">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxWoUe8o0niUb-AKrRpZ64U9ac8zE1JWMgAMUrK5fGOHtihWppmLLL3aLVwIcrP3HG8vRJ4geCUshozfje52e9d0VfPwrPIdYbPkaPsgpkoJbdmDlIqBzYb43i48O--3xC_mX4pudvgeS1wawnHfzEovQMQE1K6cXE6UnZ3SQlGz6Ih2hHJ1trummv0ubggM1e1P9VC6edgkwQOlQJgQdHT2t9jMNSNf-TkkUpsbxzoj3cAIBc16VXB6qH8q6ELjrT_iWV-0cl3BI" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%) brightness(0.8);" alt="Spa environment">
+                <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 20px;">
+                    <div style="background: rgba(255,255,255,0.9); padding: 40px; border-radius: var(--border-radius); max-width: 600px; text-align: center;">
+                        <p style="font-style: italic; font-size: 1.125rem; font-weight: bold; margin: 0;">"Sức khỏe không phải là đích đến, mà là một hành trình được chăm chút của các giác quan."</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
     <!-- Footer -->
-            <footer class="bg-surface-container-low border-t border-surface-variant/10 w-full pt-16 pb-8 mt-24">
-        <div class="px-gutter md:px-container-padding-desktop max-w-[1280px] mx-auto">
-            <div class="flex flex-col lg:flex-row justify-between items-center gap-8 mb-8">
-                <div class="font-headline-md text-headline-md text-primary font-black tracking-tighter shrink-0">NESTA SPA</div>
-                <div class="flex flex-wrap justify-center lg:justify-end gap-x-8 gap-y-4">
-                    <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Chính sách bảo mật</a>
-                    <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Điều khoản sử dụng</a>
-                    <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Phát triển bền vững</a>
-                    <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Tuyển dụng</a>
-                </div>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <img src="assets/images/logo.png" alt="NESTA SPA" style="width: 130px; margin-bottom: 24px; filter: brightness(0) invert(1);">
+                <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; line-height: 1.8;">Trải nghiệm chăm sóc sức khỏe và làm đẹp thượng lưu chuẩn 5 sao ngay tại không gian riêng tư của bạn.</p>
             </div>
-            <div class="border-t border-outline-variant/20 pt-8 text-center flex justify-center items-center">
-                <div class="font-label-sm text-on-surface-variant uppercase tracking-widest">
-                    &copy; 2024 NESTA SPA. TRẢI NGHIỆM LUXURY WELLNESS TẠI GIA.
+            <div class="footer-col">
+                <h4>Thông tin liên hệ</h4>
+                <p><i data-lucide="map-pin" style="display:inline-block; vertical-align:middle; width:16px;"></i> 123 Đường ABC, Quận XYZ, TP.HCM</p>
+                <p><i data-lucide="phone" style="display:inline-block; vertical-align:middle; width:16px;"></i> Hotline: 0909 123 456</p>
+                <p><i data-lucide="mail" style="display:inline-block; vertical-align:middle; width:16px;"></i> Email: contact@nestaspa.com</p>
+                <p><i data-lucide="clock" style="display:inline-block; vertical-align:middle; width:16px;"></i> Giờ mở cửa: 09:00 - 21:00</p>
+            </div>
+            <div class="footer-col">
+                <h4>Liên kết</h4>
+                <ul>
+                    <li><a href="trangchu.html">Trang chủ</a></li>
+                    <li><a href="banggia.html">Bảng giá</a></li>
+                    <li><a href="quytrinh.html">Quy trình</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Dịch vụ</h4>
+                <ul>
+                    <li><a href="chitietdichvu.html?s=nesta-signature">Nesta Signature Stone</a></li>
+                    <li><a href="chitietdichvu.html?s=aromatherapy">Botanical Aromatherapy</a></li>
+                    <li><a href="chitietdichvu.html?s=luminous-facial">Luminous Facial</a></li>
+                    <li><a href="dichvu.html">Tất cả dịch vụ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Fanpage</h4>
+                <div style="background:#222; padding:20px; border-radius:10px; text-align:center;">
+                    <p style="color: white; font-weight: bold; margin-bottom: 12px;">Nesta Spa Fanpage</p>
+                    <a href="#" class="btn btn-outline" style="color:white; border-color:white; margin-top:10px;"><i data-lucide="facebook"></i> Theo dõi</a>
                 </div>
             </div>
         </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NESTA SPA. TRẢI NGHIỆM LUXURY WELLNESS TẠI GIA.</p>
+        </div>
     </footer>
-<script src="assets/js/main.js"></script>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <a href="tel:0909123456" class="btn-float btn-phone">
+            <i data-lucide="phone"></i>
+        </a>
+        <a href="https://zalo.me/0909123456" class="btn-float btn-zalo" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.05 12A9 9 0 0012 3a9 9 0 00-9 9c0 2.25.83 4.3 2.21 5.86L4 21l3.32-1.07A8.96 8.96 0 0012 21a9 9 0 009.05-9z" fill="white"/></svg>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('open');
+        });
+    </script>
 </body>
-
 </html>
-
-
-
-

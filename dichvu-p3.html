@@ -1,450 +1,235 @@
-﻿<!DOCTYPE html>
-<html class="light" lang="vi">
-
+<!DOCTYPE html>
+<html lang="vi">
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DỊCH VỤ TINH KHIẾT | NESTA SPA</title>
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <!-- Material Symbols -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet">
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-variant": "#e3e2e2",
-                        "tertiary-fixed-dim": "#c6c6c7",
-                        "secondary-fixed-dim": "#c6c6c7",
-                        "on-secondary-fixed-variant": "#454747",
-                        "secondary-fixed": "#e2e2e2",
-                        "tertiary": "#000000",
-                        "on-surface": "#1b1c1c",
-                        "inverse-primary": "#c6c6c6",
-                        "on-error": "#ffffff",
-                        "on-error-container": "#93000a",
-                        "on-secondary-fixed": "#1a1c1c",
-                        "on-tertiary-fixed": "#1a1c1c",
-                        "tertiary-fixed": "#e2e2e2",
-                        "on-secondary": "#ffffff",
-                        "inverse-on-surface": "#f2f0f0",
-                        "surface-bright": "#fbf9f9",
-                        "surface-container-high": "#e9e8e7",
-                        "secondary-container": "#dfe0e0",
-                        "on-background": "#1b1c1c",
-                        "surface-container-highest": "#e3e2e2",
-                        "primary": "#000000",
-                        "surface-dim": "#dbdad9",
-                        "on-primary-fixed": "#1b1b1b",
-                        "outline": "#7e7576",
-                        "inverse-surface": "#303031",
-                        "surface-container": "#efeded",
-                        "error-container": "#ffdad6",
-                        "on-secondary-container": "#616363",
-                        "on-tertiary-container": "#838484",
-                        "on-primary-fixed-variant": "#474747",
-                        "on-primary-container": "#848484",
-                        "outline-variant": "#cfc4c5",
-                        "surface-container-low": "#f5f3f3",
-                        "background": "#fbf9f9",
-                        "on-primary": "#ffffff",
-                        "primary-fixed-dim": "#c6c6c6",
-                        "on-tertiary": "#ffffff",
-                        "primary-fixed": "#e2e2e2",
-                        "error": "#ba1a1a",
-                        "secondary": "#5d5f5f",
-                        "on-surface-variant": "#4c4546",
-                        "tertiary-container": "#1a1c1c",
-                        "on-tertiary-fixed-variant": "#454747",
-                        "primary-container": "#1b1b1b",
-                        "surface-container-lowest": "#ffffff",
-                        "surface": "#fbf9f9",
-                        "surface-tint": "#5e5e5e"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "1rem",
-                        "lg": "2rem",
-                        "xl": "3rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "unit": "8px",
-                        "stack-sm": "8px",
-                        "container-padding-desktop": "64px",
-                        "gutter": "24px",
-                        "stack-md": "16px",
-                        "container-padding-mobile": "24px",
-                        "stack-lg": "32px"
-                    },
-                    "fontFamily": {
-                        "headline-md": ["Bitter"],
-                        "display-lg": ["Bitter"],
-                        "headline-lg-mobile": ["Bitter"],
-                        "label-sm": ["Bitter"],
-                        "headline-lg": ["Bitter"],
-                        "body-lg": ["Bitter"],
-                        "label-lg": ["Bitter"],
-                        "body-md": ["Bitter"]
-                    },
-                    "fontSize": {
-                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "400" }],
-                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
-                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "400" }],
-                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }],
-                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "400" }],
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "label-lg": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
-                    }
-                },
-            },
-        }
-    </script>
-    <style>
-        .soft-shadow-l2 {
-            box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.04);
-            border: 1px solid #F4F4F4;
-        }
-
-        .soft-shadow-l3:hover {
-            box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.06);
-            transform: translateY(-4px);
-            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-        }
-
-        .text-outline {
-            -webkit-text-stroke: 1px #000;
-            color: transparent;
-        }
-
-        .hide-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body>
 
-<body class="bg-surface text-on-surface font-body-md selection:bg-primary selection:text-on-primary"
-    style="font-family: &quot;Google Sans Flex&quot;, sans-serif;">
-    <!-- Mobile Menu Checkbox Hack -->
-    <input type="checkbox" id="mobile-menu-toggle" class="hidden peer">
-    
-    <!-- Mobile Overlay -->
-    <label for="mobile-menu-toggle" class="fixed inset-0 bg-black/50 z-40 hidden peer-checked:block md:peer-checked:hidden cursor-pointer backdrop-blur-sm transition-opacity"></label>
-
-    <!-- Mobile Slidebar -->
-    <div class="fixed top-0 right-0 h-full w-64 bg-surface z-50 shadow-2xl transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 flex flex-col px-6 py-8 md:hidden">
-                <div class="flex justify-between items-center mb-8">
-            <a href="trangchu.html" class="block">
-                <img src="assets/images/logo.png" alt="NESTA SPA" class="h-16 w-auto object-contain scale-[1.3] origin-left">
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="trangchu.html" class="logo">
+                <img src="assets/images/logo.png" alt="NESTA SPA">
             </a>
-            <label for="mobile-menu-toggle" class="cursor-pointer text-primary">
-                <span class="material-symbols-outlined text-[28px]">close</span>
-            </label>
+            <nav class="nav-menu">
+                <a href="trangchu.html" class="nav-link">Trang Chủ</a>
+                <a href="dichvu.html" class="nav-link active">Dịch Vụ</a>
+                <a href="banggia.html" class="nav-link">Bảng Giá</a>
+                <a href="quytrinh.html" class="nav-link">Quy Trình</a>
+                <a href="lienhe.html" class="nav-link">Liên Hệ</a>
+            </nav>
+            <div class="header-actions">
+                <a href="lienhe.html" class="btn btn-primary">Đặt Lịch</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
         </div>
-        <div class="mb-6 font-label-sm uppercase tracking-widest text-secondary font-bold border-b border-surface-variant pb-2">Menu</div>
-        <div class="flex flex-col gap-6">
-            <a href="trangchu.html" class="font-body-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors">Trang Chủ</a>
-            <a href="dichvu.html" class="font-body-lg uppercase tracking-widest text-primary font-bold border-b border-primary pb-2 w-max">Dịch Vụ</a>
-            <a href="banggia.html" class="font-body-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors">Bảng Giá</a>
-            <a href="quytrinh.html" class="font-body-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors">Quy Trình</a>
-            <a href="lienhe.html" class="font-body-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors">Liên Hệ</a>
-        </div>
-    </div>
+    </header>
 
-    <!-- Top Navigation Bar -->
-    <nav class="bg-surface/80 backdrop-blur-md dark:bg-surface-container/80 fixed top-0 w-full z-30 border-b border-surface-variant dark:border-outline-variant/20 shadow-sm h-20">
-        <div class="flex justify-between items-center px-4 md:px-container-padding-desktop h-full max-w-[1280px] mx-auto gap-4">
-            <div class="flex items-center shrink-0 w-[120px] md:w-[160px]">
-                <a href="trangchu.html" class="block">
-                    <img src="assets/images/logo.png" alt="NESTA SPA" class="h-16 md:h-20 w-auto object-contain scale-[1.3] origin-left">
-                </a>
-            </div>
-            
-            <!-- Desktop Menu -->
-            <div class="max-lg:hidden flex flex-1 justify-center gap-8 items-center">
-                <a href="trangchu.html" class="font-body-md text-body-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300">Trang Chủ</a>
-                <a href="dichvu.html" class="font-body-md text-body-md uppercase tracking-widest text-primary font-bold border-b border-primary pb-1 transition-colors duration-300">Dịch Vụ</a>
-                <a href="banggia.html" class="font-body-md text-body-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300">Bảng Giá</a>
-                <a href="quytrinh.html" class="font-body-md text-body-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300">Quy Trình</a>
-                <a href="lienhe.html" class="font-body-md text-body-md uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300">Liên Hệ</a>
-            </div>
-            
-            <!-- Actions -->
-            <div class="flex items-center justify-end shrink-0 gap-4">
-                <a href="lienhe.html" class="bg-primary text-on-primary px-4 md:px-stack-lg py-2 md:py-3 rounded-full font-label-lg text-[10px] md:text-label-lg uppercase tracking-wider transition-transform duration-200 active:scale-90 text-center whitespace-nowrap">Đặt Lịch</a>
-                <!-- Hamburger Button for Mobile -->
-                <label for="mobile-menu-toggle" class="lg:hidden cursor-pointer text-primary flex items-center">
-                    <span class="material-symbols-outlined text-[28px]">menu</span>
-                </label>
-            </div>
-        </div>
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu">
+        <a href="trangchu.html" class="nav-link">Trang Chủ</a>
+        <a href="dichvu.html" class="nav-link active">Dịch Vụ</a>
+        <a href="banggia.html" class="nav-link">Bảng Giá</a>
+        <a href="quytrinh.html" class="nav-link">Quy Trình</a>
+        <a href="lienhe.html" class="nav-link">Liên Hệ</a>
+        <a href="lienhe.html" class="btn btn-primary" style="justify-content: center;">Đặt Lịch</a>
     </nav>
-    <main class="pt-32 pb-stack-lg">
-        <!-- Hero Section -->
-        <section class="max-w-[1280px] mx-auto px-gutter md:px-container-padding-desktop mb-20">
-            <div class="flex flex-col md:flex-row items-baseline justify-between gap-stack-md">
-                <h1 class="font-display-lg text-4xl md:text-display-lg uppercase leading-none mb-4 md:mb-0">
-                    DỊCH VỤ <br>
-                    <span class="italic font-light">TINH KHIẾT</span>
-                </h1>
-                <p class="max-w-md text-secondary font-body-lg">
-                    Những liệu trình chăm sóc sức khỏe thượng lưu dành cho tâm hồn hiện đại. Trải nghiệm sự thư giãn
-                    tuyệt đối và tinh tế tại không gian của riêng bạn.
-                </p>
+
+    <!-- Breadcrumb Banner -->
+    <section class="breadcrumb-banner" style="background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1920&auto=format&fit=crop');">
+        <div class="breadcrumb-content">
+            <h1>Dịch Vụ</h1>
+            <div class="breadcrumb-nav">
+                <a href="trangchu.html">Trang Chủ</a>
+                <span>/</span>
+                Dịch Vụ
             </div>
-            <!-- Category Filter (Pill-based) -->
-            <div class="mt-12 flex gap-stack-sm overflow-x-auto hide-scrollbar pb-4">
-                <button
-                    class="category-btn bg-primary text-on-primary px-5 py-2 md:px-8 md:py-3 whitespace-nowrap shrink-0 rounded-full text-sm md:font-label-lg transition-all duration-300"
-                    onclick="filterServices('all')">Tất cả</button>
-                <button
-                    class="category-btn bg-surface-container-low text-on-surface-variant px-5 py-2 md:px-8 md:py-3 whitespace-nowrap shrink-0 rounded-full text-sm md:font-label-lg hover:bg-surface-variant transition-all duration-300"
-                    onclick="filterServices('Massage')">Massage</button>
-                <button
-                    class="category-btn bg-surface-container-low text-on-surface-variant px-5 py-2 md:px-8 md:py-3 whitespace-nowrap shrink-0 rounded-full text-sm md:font-label-lg hover:bg-surface-variant transition-all duration-300"
-                    onclick="filterServices('Skin Care')">Chăm sóc Da</button>
-                <button
-                    class="category-btn bg-surface-container-low text-on-surface-variant px-5 py-2 md:px-8 md:py-3 whitespace-nowrap shrink-0 rounded-full text-sm md:font-label-lg hover:bg-surface-variant transition-all duration-300"
-                    onclick="filterServices('Combos')">Gói Combo</button>
+        </div>
+    </section>
+
+    <main>
+        <!-- Category Filter -->
+        <section style="padding: 40px 0 20px 0;">
+            <div class="container text-center">
+                <h2 class="mb-4">Dịch Vụ Tinh Khiết</h2>
+                <p class="mb-8" style="color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto;">Những liệu trình chăm sóc sức khỏe thượng lưu dành cho tâm hồn hiện đại. Trải nghiệm sự thư giãn tuyệt đối và tinh tế tại không gian của riêng bạn.</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap" style="margin-bottom: 20px;">
+                    <button class="btn btn-primary" onclick="filterServices('all')">Tất cả</button>
+                    <button class="btn btn-outline" onclick="filterServices('Massage')">Massage</button>
+                    <button class="btn btn-outline" onclick="filterServices('Skin Care')">Chăm sóc Da</button>
+                    <button class="btn btn-outline" onclick="filterServices('Combos')">Gói Combo</button>
+                </div>
             </div>
         </section>
+
         <!-- Services Grid -->
-        <section class="max-w-[1280px] mx-auto px-gutter md:px-container-padding-desktop">
-            <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8" id="services-grid">
-                <!-- Card 1: Massage (Massage Mẹ Bầu) -->
-                <div class="service-card group cursor-pointer" onclick="window.location.href='chitietdichvu.html?s=mebau'" data-category="Massage"
-                    style="opacity: 1; transform: translateY(0px); transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);">
-                    <div class="bg-surface-container-lowest rounded-xl p-4 pb-5 md:p-6 soft-shadow-l2 soft-shadow-l3 flex flex-col h-full">
-                        <div class="relative overflow-hidden rounded-lg aspect-[4/5] mb-3 md:mb-6">
-                            <img alt="Massage Mẹ Bầu"
-                                class="w-full h-full object-cover grayscale brightness-105 group-hover:scale-110 transition-transform duration-700"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA99JOg7-QUXEyJP0ztKLa-T-_ms1C6rR3bjCQtM4_Ju5YO0lzM8j8riuf4ZGvHfmx3UY0ln_RfE5itc4r7Nl762Y9lXo51Ojiejo2Q9XScpBu45e1QuyVsLB2NZl9rTVdM3YB9ZmeCeXr0VlTBvG7K-SxzyyY6ECdRcz9rSoLihtHzC5dpWAI1Uos4JDlQMN2sFojJL_r38hMuisOs_GslSVjaXMdGkCGH2utxrFVPXVhpDK6_eXoKnLu_sTXVV05z67WgWSpsIk0">
-                            <div
-                                class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/80 backdrop-blur-md px-2 py-0.5 md:px-4 md:py-1 rounded-full text-[8px] md:text-label-sm uppercase tracking-tighter">
-                                Massage</div>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <div class="flex justify-between items-start gap-2">
-                                <h3 class="font-headline-md text-sm md:text-headline-md font-bold uppercase tracking-tight line-clamp-2 break-words">MASSAGE MẸ BẦU CHUYÊN SÂU</h3>
-                                <span class="material-symbols-outlined text-primary text-[16px] md:text-[24px] shrink-0 mt-0.5">arrow_outward</span>
-                            </div>
-                            <div class="flex justify-between items-center mt-auto border-t border-surface-variant/30 pt-3 md:pt-4">
-                                <span class="text-secondary text-[10px] md:text-base font-bold">75 Phút</span>
-                                <span class="font-headline-md text-sm md:text-headline-md text-primary">$140</span>
+        <section class="section pt-0">
+            <div class="container">
+                <div class="card-grid" id="services-grid">
+                    <!-- Card 1 -->
+                    <div class="card" onclick="window.location.href='chitietdichvu.html?s=mebau'">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA99JOg7-QUXEyJP0ztKLa-T-_ms1C6rR3bjCQtM4_Ju5YO0lzM8j8riuf4ZGvHfmx3UY0ln_RfE5itc4r7Nl762Y9lXo51Ojiejo2Q9XScpBu45e1QuyVsLB2NZl9rTVdM3YB9ZmeCeXr0VlTBvG7K-SxzyyY6ECdRcz9rSoLihtHzC5dpWAI1Uos4JDlQMN2sFojJL_r38hMuisOs_GslSVjaXMdGkCGH2utxrFVPXVhpDK6_eXoKnLu_sTXVV05z67WgWSpsIk0" class="card-image" style="filter: grayscale(100%);" alt="Massage Mẹ Bầu">
+                        <div class="card-body">
+                            <div class="card-tag">Massage - 75 Phút</div>
+                            <h3 class="card-title">Massage Mẹ Bầu Chuyên Sâu</h3>
+                            <p class="card-desc">Liệu pháp nhẹ nhàng an toàn tuyệt đối, giúp mẹ bầu thư giãn, giảm thiểu đau mỏi thai kỳ.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <span style="font-weight: bold; font-size: 1.25rem;">$140</span>
+                                <a href="lienhe.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.75rem;">Đặt ngay</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Card 2: Combos (Trị Liệu Điêu Khắc Cơ Thể) -->
-                <div class="service-card group cursor-pointer" onclick="window.location.href='chitietdichvu.html?s=dieukhac'" data-category="Combos"
-                    style="opacity: 1; transform: translateY(0px); transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);">
-                    <div class="bg-surface-container-lowest rounded-xl p-4 pb-5 md:p-6 soft-shadow-l2 soft-shadow-l3 flex flex-col h-full">
-                        <div class="relative overflow-hidden rounded-lg aspect-[4/5] mb-3 md:mb-6">
-                            <img alt="Điêu Khắc Cơ Thể"
-                                class="w-full h-full object-cover grayscale brightness-105 group-hover:scale-110 transition-transform duration-700"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgWkjgXrSeJbA7cmQkpZgtJPsMWBLze5ybg-tnL8Fa8ZgzfVpAx4CqECWfcHlvxuZ14UZ6KABpZIpfIK6OVC4r102qfsKuEfHc3cxmOZKnFPMNzLkG-rbzVw-Evdv3QXX-8KUMbo4yJFaXayf9q6cp1xeERA3zys2bfGSn7t-GjQ0qFs2sCuoNUYpqeGADS7VYj-hj1qp3Z3U3Sn0doGB-YK7WhkBfms3H0orExiToO0R25jitBf9Dro6dLLsTEAY2qW586pSw2U8">
-                            <div
-                                class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/80 backdrop-blur-md px-2 py-0.5 md:px-4 md:py-1 rounded-full text-[8px] md:text-label-sm uppercase tracking-tighter">
-                                Gói Combo</div>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <div class="flex justify-between items-start gap-2">
-                                <h3 class="font-headline-md text-sm md:text-headline-md font-bold uppercase tracking-tight line-clamp-2 break-words">GÓI TRỊ LIỆU ĐIÊU KHẮC BODY</h3>
-                                <span class="material-symbols-outlined text-primary text-[16px] md:text-[24px] shrink-0 mt-0.5">arrow_outward</span>
-                            </div>
-                            <div class="flex justify-between items-center mt-auto border-t border-surface-variant/30 pt-3 md:pt-4">
-                                <span class="text-secondary text-[10px] md:text-base font-bold">130 Phút</span>
-                                <span class="font-headline-md text-sm md:text-headline-md text-primary">$260</span>
+                    
+                    <!-- Card 2 -->
+                    <div class="card" onclick="window.location.href='chitietdichvu.html?s=dieukhac'">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgWkjgXrSeJbA7cmQkpZgtJPsMWBLze5ybg-tnL8Fa8ZgzfVpAx4CqECWfcHlvxuZ14UZ6KABpZIpfIK6OVC4r102qfsKuEfHc3cxmOZKnFPMNzLkG-rbzVw-Evdv3QXX-8KUMbo4yJFaXayf9q6cp1xeERA3zys2bfGSn7t-GjQ0qFs2sCuoNUYpqeGADS7VYj-hj1qp3Z3U3Sn0doGB-YK7WhkBfms3H0orExiToO0R25jitBf9Dro6dLLsTEAY2qW586pSw2U8" class="card-image" style="filter: grayscale(100%);" alt="Điêu Khắc Body">
+                        <div class="card-body">
+                            <div class="card-tag">Gói Combo - 130 Phút</div>
+                            <h3 class="card-title">Gói Trị Liệu Điêu Khắc Body</h3>
+                            <p class="card-desc">Kết hợp massage đánh mỡ và các liệu pháp định hình dáng thon gọn cơ thể một cách tự nhiên.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <span style="font-weight: bold; font-size: 1.25rem;">$260</span>
+                                <a href="lienhe.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.75rem;">Đặt ngay</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Card 3: Skin Care (Liệu Trình Collagen) -->
-                <div class="service-card group cursor-pointer" onclick="window.location.href='chitietdichvu.html?s=collagen'" data-category="Skin Care"
-                    style="opacity: 1; transform: translateY(0px); transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);">
-                    <div class="bg-surface-container-lowest rounded-xl p-4 pb-5 md:p-6 soft-shadow-l2 soft-shadow-l3 flex flex-col h-full">
-                        <div class="relative overflow-hidden rounded-lg aspect-[4/5] mb-3 md:mb-6">
-                            <img alt="Liệu Trình Collagen"
-                                class="w-full h-full object-cover grayscale brightness-105 group-hover:scale-110 transition-transform duration-700"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbUBuRbhC_qREwtfvzx71frBmSVQb3OcbC7Gyj1RDmZHu0p-KFfJVJ_mgP9-Kb9OsOrj4ELErxzvGnZhaN-9o5sh6DACxmOKAmi7y5htdMkc_JQiRjng3LPkXlPrPhAr-MfivvydWnXRfjO7AA0ibvxXB7CMXcCJHDB1dfCNOG_NJdDbtQaXVn__bsZkVORLAztkli7Rp8vMlUPv8J9xueHW1CASAcZFePFWhspugsnZzPIxsisz5FPTtMmWgCG6Yu9PpWhqQ2MCE">
-                            <div
-                                class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/80 backdrop-blur-md px-2 py-0.5 md:px-4 md:py-1 rounded-full text-[8px] md:text-label-sm uppercase tracking-tighter">
-                                Chăm sóc Da</div>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <div class="flex justify-between items-start gap-2">
-                                <h3 class="font-headline-md text-sm md:text-headline-md font-bold uppercase tracking-tight line-clamp-2 break-words">SÁNG DA TƯƠI COLLAGEN</h3>
-                                <span class="material-symbols-outlined text-primary text-[16px] md:text-[24px] shrink-0 mt-0.5">arrow_outward</span>
-                            </div>
-                            <div class="flex justify-between items-center mt-auto border-t border-surface-variant/30 pt-3 md:pt-4">
-                                <span class="text-secondary text-[10px] md:text-base font-bold">90 Phút</span>
-                                <span class="font-headline-md text-sm md:text-headline-md text-primary">$185</span>
+
+                    <!-- Card 3 -->
+                    <div class="card" onclick="window.location.href='chitietdichvu.html?s=collagen'">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbUBuRbhC_qREwtfvzx71frBmSVQb3OcbC7Gyj1RDmZHu0p-KFfJVJ_mgP9-Kb9OsOrj4ELErxzvGnZhaN-9o5sh6DACxmOKAmi7y5htdMkc_JQiRjng3LPkXlPrPhAr-MfivvydWnXRfjO7AA0ibvxXB7CMXcCJHDB1dfCNOG_NJdDbtQaXVn__bsZkVORLAztkli7Rp8vMlUPv8J9xueHW1CASAcZFePFWhspugsnZzPIxsisz5FPTtMmWgCG6Yu9PpWhqQ2MCE" class="card-image" style="filter: grayscale(100%);" alt="Sáng Da Collagen">
+                        <div class="card-body">
+                            <div class="card-tag">Chăm sóc Da - 90 Phút</div>
+                            <h3 class="card-title">Sáng Da Tươi Collagen</h3>
+                            <p class="card-desc">Bổ sung collagen trực tiếp, phục hồi cấu trúc elastin giúp da đàn hồi, xóa mờ nếp nhăn.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <span style="font-weight: bold; font-size: 1.25rem;">$185</span>
+                                <a href="lienhe.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.75rem;">Đặt ngay</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Card 4: Massage (Trị Liệu Đá Muối Himalaya) -->
-                <div class="service-card group cursor-pointer" onclick="window.location.href='chitietdichvu.html?s=damuoi'" data-category="Massage"
-                    style="opacity: 1; transform: translateY(0px); transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);">
-                    <div class="bg-surface-container-lowest rounded-xl p-4 pb-5 md:p-6 soft-shadow-l2 soft-shadow-l3 flex flex-col h-full">
-                        <div class="relative overflow-hidden rounded-lg aspect-[4/5] mb-3 md:mb-6">
-                            <img alt="Đá Muối Himalaya"
-                                class="w-full h-full object-cover grayscale brightness-105 group-hover:scale-110 transition-transform duration-700"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA99JOg7-QUXEyJP0ztKLa-T-_ms1C6rR3bjCQtM4_Ju5YO0lzM8j8riuf4ZGvHfmx3UY0ln_RfE5itc4r7Nl762Y9lXo51Ojiejo2Q9XScpBu45e1QuyVsLB2NZl9rTVdM3YB9ZmeCeXr0VlTBvG7K-SxzyyY6ECdRcz9rSoLihtHzC5dpWAI1Uos4JDlQMN2sFojJL_r38hMuisOs_GslSVjaXMdGkCGH2utxrFVPXVhpDK6_eXoKnLu_sTXVV05z67WgWSpsIk0">
-                            <div
-                                class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/80 backdrop-blur-md px-2 py-0.5 md:px-4 md:py-1 rounded-full text-[8px] md:text-label-sm uppercase tracking-tighter">
-                                Massage</div>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <div class="flex justify-between items-start gap-2">
-                                <h3 class="font-headline-md text-sm md:text-headline-md font-bold uppercase tracking-tight line-clamp-2 break-words">ĐÁ MUỐI HIMALAYA RITUAL</h3>
-                                <span class="material-symbols-outlined text-primary text-[16px] md:text-[24px] shrink-0 mt-0.5">arrow_outward</span>
-                            </div>
-                            <div class="flex justify-between items-center mt-auto border-t border-surface-variant/30 pt-3 md:pt-4">
-                                <span class="text-secondary text-[10px] md:text-base font-bold">75 Phút</span>
-                                <span class="font-headline-md text-sm md:text-headline-md text-primary">$155</span>
+
+                    <!-- Card 4 -->
+                    <div class="card" onclick="window.location.href='chitietdichvu.html?s=damuoi'">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA99JOg7-QUXEyJP0ztKLa-T-_ms1C6rR3bjCQtM4_Ju5YO0lzM8j8riuf4ZGvHfmx3UY0ln_RfE5itc4r7Nl762Y9lXo51Ojiejo2Q9XScpBu45e1QuyVsLB2NZl9rTVdM3YB9ZmeCeXr0VlTBvG7K-SxzyyY6ECdRcz9rSoLihtHzC5dpWAI1Uos4JDlQMN2sFojJL_r38hMuisOs_GslSVjaXMdGkCGH2utxrFVPXVhpDK6_eXoKnLu_sTXVV05z67WgWSpsIk0" class="card-image" style="filter: grayscale(100%);" alt="Đá Muối Himalaya">
+                        <div class="card-body">
+                            <div class="card-tag">Massage - 75 Phút</div>
+                            <h3 class="card-title">Đá Muối Himalaya Ritual</h3>
+                            <p class="card-desc">Thải độc sâu cơ thể nhờ ion âm từ đá muối ngàn năm, mang lại giấc ngủ ngon và sâu hơn.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <span style="font-weight: bold; font-size: 1.25rem;">$155</span>
+                                <a href="lienhe.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.75rem;">Đặt ngay</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Card 5: Skin Care (Mặt Nạ Vàng 24K) -->
-                <div class="service-card group cursor-pointer" onclick="window.location.href='chitietdichvu.html?s=matnavang'" data-category="Skin Care"
-                    style="opacity: 1; transform: translateY(0px); transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);">
-                    <div class="bg-surface-container-lowest rounded-xl p-4 pb-5 md:p-6 soft-shadow-l2 soft-shadow-l3 flex flex-col h-full">
-                        <div class="relative overflow-hidden rounded-lg aspect-[4/5] mb-3 md:mb-6">
-                            <img alt="Mặt Nạ Vàng 24K"
-                                class="w-full h-full object-cover grayscale brightness-105 group-hover:scale-110 transition-transform duration-700"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbUBuRbhC_qREwtfvzx71frBmSVQb3OcbC7Gyj1RDmZHu0p-KFfJVJ_mgP9-Kb9OsOrj4ELErxzvGnZhaN-9o5sh6DACxmOKAmi7y5htdMkc_JQiRjng3LPkXlPrPhAr-MfivvydWnXRfjO7AA0ibvxXB7CMXcCJHDB1dfCNOG_NJdDbtQaXVn__bsZkVORLAztkli7Rp8vMlUPv8J9xueHW1CASAcZFePFWhspugsnZzPIxsisz5FPTtMmWgCG6Yu9PpWhqQ2MCE">
-                            <div
-                                class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/80 backdrop-blur-md px-2 py-0.5 md:px-4 md:py-1 rounded-full text-[8px] md:text-label-sm uppercase tracking-tighter">
-                                Chăm sóc Da</div>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <div class="flex justify-between items-start gap-2">
-                                <h3 class="font-headline-md text-sm md:text-headline-md font-bold uppercase tracking-tight line-clamp-2 break-words">MẶT NẠ VÀNG 24K NÂNG CƠ</h3>
-                                <span class="material-symbols-outlined text-primary text-[16px] md:text-[24px] shrink-0 mt-0.5">arrow_outward</span>
-                            </div>
-                            <div class="flex justify-between items-center mt-auto border-t border-surface-variant/30 pt-3 md:pt-4">
-                                <span class="text-secondary text-[10px] md:text-base font-bold">60 Phút</span>
-                                <span class="font-headline-md text-sm md:text-headline-md text-primary">$195</span>
+
+                    <!-- Card 5 -->
+                    <div class="card" onclick="window.location.href='chitietdichvu.html?s=matnavang'">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbUBuRbhC_qREwtfvzx71frBmSVQb3OcbC7Gyj1RDmZHu0p-KFfJVJ_mgP9-Kb9OsOrj4ELErxzvGnZhaN-9o5sh6DACxmOKAmi7y5htdMkc_JQiRjng3LPkXlPrPhAr-MfivvydWnXRfjO7AA0ibvxXB7CMXcCJHDB1dfCNOG_NJdDbtQaXVn__bsZkVORLAztkli7Rp8vMlUPv8J9xueHW1CASAcZFePFWhspugsnZzPIxsisz5FPTtMmWgCG6Yu9PpWhqQ2MCE" class="card-image" style="filter: grayscale(100%);" alt="Mặt Nạ Vàng 24K">
+                        <div class="card-body">
+                            <div class="card-tag">Chăm sóc Da - 60 Phút</div>
+                            <h3 class="card-title">Mặt Nạ Vàng 24K Nâng Cơ</h3>
+                            <p class="card-desc">Liệu pháp hoàng gia ứng dụng vàng 24k hỗ trợ nâng cơ, giảm thiểu vết chân chim vượt trội.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <span style="font-weight: bold; font-size: 1.25rem;">$195</span>
+                                <a href="lienhe.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.75rem;">Đặt ngay</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Card 6: Combos (Gói Trị Liệu Thảo Dược Toàn Diện) -->
-                <div class="service-card group cursor-pointer" onclick="window.location.href='chitietdichvu.html?s=thaoduoctoandien'" data-category="Combos"
-                    style="opacity: 1; transform: translateY(0px); transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);">
-                    <div class="bg-surface-container-lowest rounded-xl p-4 pb-5 md:p-6 soft-shadow-l2 soft-shadow-l3 flex flex-col h-full">
-                        <div class="relative overflow-hidden rounded-lg aspect-[4/5] mb-3 md:mb-6">
-                            <img alt="Thảo Dược Toàn Diện"
-                                class="w-full h-full object-cover grayscale brightness-105 group-hover:scale-110 transition-transform duration-700"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAitn8iRrm_DXD5vyuo10foNu_6kHPMWzLAnK-DChLiNbwlEHA3YR1qXThCOfGeJdmzfGw8uIpRjVVQDxST3kRiYCPxsVpWs1pPxqLY-ws8rE1iwJvO_coS5K23wHfiP-hoyRSUbPjSTZ_qOMxpgKxhLEYqNL_2pC16hN5kKmEq1LOrFPMbgtlVJeUhjvjnNBvnrUPOWp1O4x8ksNvVNMGCorBHrLnuMtISgIpH45Nr9OvLgNuBmQ26MEXPFolNoVpUYeeE5rgF-vY">
-                            <div
-                                class="absolute top-2 left-2 md:top-4 md:left-4 bg-white/80 backdrop-blur-md px-2 py-0.5 md:px-4 md:py-1 rounded-full text-[8px] md:text-label-sm uppercase tracking-tighter">
-                                Gói Combo</div>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <div class="flex justify-between items-start gap-2">
-                                <h3 class="font-headline-md text-sm md:text-headline-md font-bold uppercase tracking-tight line-clamp-2 break-words">THẢO DƯỢC TOÀN DIỆN</h3>
-                                <span class="material-symbols-outlined text-primary text-[16px] md:text-[24px] shrink-0 mt-0.5">arrow_outward</span>
-                            </div>
-                            <div class="flex justify-between items-center mt-auto border-t border-surface-variant/30 pt-3 md:pt-4">
-                                <span class="text-secondary text-[10px] md:text-base font-bold">140 Phút</span>
-                                <span class="font-headline-md text-sm md:text-headline-md text-primary">$275</span>
+
+                    <!-- Card 6 -->
+                    <div class="card" onclick="window.location.href='chitietdichvu.html?s=thaoduoctoandien'">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAitn8iRrm_DXD5vyuo10foNu_6kHPMWzLAnK-DChLiNbwlEHA3YR1qXThCOfGeJdmzfGw8uIpRjVVQDxST3kRiYCPxsVpWs1pPxqLY-ws8rE1iwJvO_coS5K23wHfiP-hoyRSUbPjSTZ_qOMxpgKxhLEYqNL_2pC16hN5kKmEq1LOrFPMbgtlVJeUhjvjnNBvnrUPOWp1O4x8ksNvVNMGCorBHrLnuMtISgIpH45Nr9OvLgNuBmQ26MEXPFolNoVpUYeeE5rgF-vY" class="card-image" style="filter: grayscale(100%);" alt="Thảo Dược Toàn Diện">
+                        <div class="card-body">
+                            <div class="card-tag">Gói Combo - 140 Phút</div>
+                            <h3 class="card-title">Thảo Dược Toàn Diện</h3>
+                            <p class="card-desc">Gói chăm sóc full body với bài thuốc ngâm tắm thảo dược của người Dao Đỏ và massage truyền thống.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <span style="font-weight: bold; font-size: 1.25rem;">$275</span>
+                                <a href="lienhe.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.75rem;">Đặt ngay</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-            </div>
-
-            <!-- Pagination Container -->
-            <div id="pagination-container" class="flex justify-center items-center gap-4 mt-16 pb-8 w-full">
-                <!-- Static Pagination for Frontend Demo -->
-                <a href="dichvu-p2.html" class="w-10 h-10 rounded-full border border-surface-variant flex items-center justify-center text-secondary hover:bg-primary hover:text-on-primary hover:border-primary transition-colors">
-                    <span class="material-symbols-outlined text-[20px]">chevron_left</span>
-                </a>
-                <div class="flex items-center gap-2">
-                    <a href="dichvu.html" class="w-10 h-10 rounded-full border border-surface-variant flex items-center justify-center font-label-lg text-secondary hover:bg-primary hover:text-on-primary hover:border-primary transition-colors">
-                        1
-                    </a>
-                    <a href="dichvu-p2.html" class="w-10 h-10 rounded-full border border-surface-variant flex items-center justify-center font-label-lg text-secondary hover:bg-primary hover:text-on-primary hover:border-primary transition-colors">
-                        2
-                    </a>
-                    <button class="w-10 h-10 rounded-full border flex items-center justify-center font-label-lg bg-primary text-on-primary border-primary">
-                        3
-                    </button>
-                </div>
-                <button class="w-10 h-10 rounded-full border border-surface-variant flex items-center justify-center text-secondary opacity-50 cursor-not-allowed" disabled>
-                    <span class="material-symbols-outlined text-[20px]">chevron_right</span>
-                </button>
-            </div>
-        </section>
-        <!-- CTA Section (Bento Style) -->
-        <section class="max-w-[1280px] mx-auto px-gutter md:px-container-padding-desktop mt-24">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div
-                    class="md:col-span-2 bg-primary text-on-primary rounded-xl p-stack-lg flex flex-col justify-between min-h-[300px] overflow-hidden relative group">
-                    <div class="z-10">
-                        <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-4">ĐẶC
-                            QUYỀN <br> HỘI VIÊN</h2>
-                        <p class="max-w-sm opacity-70 font-body-md">Trở thành hội viên để tận hưởng các liệu trình đặc
-                            quyền, ưu tiên đặt lịch và kế hoạch chăm sóc cá nhân hóa.</p>
-                    </div>
-                    <div class="z-10">
-                        <button
-                            class="bg-surface-container-lowest text-primary px-8 py-3 rounded-full font-label-lg uppercase tracking-widest hover:scale-105 transition-transform">TÌM
-                            HIỂU THÊM</button>
-                    </div>
-                    <!-- Abstract shape -->
-                    <div
-                        class="absolute -right-20 -bottom-20 w-80 h-80 bg-white/5 rounded-full blur-3xl group-hover:bg-white/10 transition-colors">
-                    </div>
-                </div>
-                <div
-                    class="bg-surface-container-high rounded-xl p-stack-lg flex flex-col justify-center items-center text-center">
-                    <span class="material-symbols-outlined text-6xl mb-4 text-primary">location_on</span>
-                    <h3 class="font-headline-md uppercase font-bold mb-2">DỊCH VỤ CAO CẤP</h3>
-                    <p class="text-on-surface-variant font-label-lg mb-6">Dịch vụ Spa tại gia cao cấp</p>
-                    <a class="text-primary font-label-lg border-b border-primary pb-1 hover:opacity-70 transition-opacity"
-                        href="#">XEM CHI TIẾT</a>
+                <!-- Pagination -->
+                <div class="d-flex justify-content-center gap-2" style="margin-top: 60px;">
+                    <a href="dichvu-p2.html" class="btn btn-outline" style="padding: 10px 14px; border-radius: 5px;"><i data-lucide="chevron-left"></i></a>
+                    <a href="dichvu.html" class="btn btn-outline" style="padding: 10px 18px; border-radius: 5px;">1</a>
+                    <a href="dichvu-p2.html" class="btn btn-outline" style="padding: 10px 18px; border-radius: 5px;">2</a>
+                    <a href="dichvu-p3.html" class="btn btn-primary" style="padding: 10px 18px; border-radius: 5px;">3</a>
+                    <a href="#" class="btn btn-outline" style="padding: 10px 14px; border-radius: 5px; opacity: 0.5; pointer-events: none;"><i data-lucide="chevron-right"></i></a>
                 </div>
             </div>
         </section>
     </main>
+
     <!-- Footer -->
-            <footer class="bg-surface-container-low border-t border-surface-variant/10 w-full pt-16 pb-8 mt-24">
-        <div class="px-gutter md:px-container-padding-desktop max-w-[1280px] mx-auto">
-            <div class="flex flex-col lg:flex-row justify-between items-center gap-8 mb-8">
-                <div class="font-headline-md text-headline-md text-primary font-black tracking-tighter shrink-0">NESTA SPA</div>
-                <div class="flex flex-wrap justify-center lg:justify-end gap-x-8 gap-y-4">
-                    <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Chính sách bảo mật</a>
-                    <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Điều khoản sử dụng</a>
-                    <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Phát triển bền vững</a>
-                    <a class="font-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Tuyển dụng</a>
-                </div>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <img src="assets/images/logo.png" alt="NESTA SPA" style="width: 130px; margin-bottom: 24px; filter: brightness(0) invert(1);">
+                <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; line-height: 1.8;">Trải nghiệm chăm sóc sức khỏe và làm đẹp thượng lưu chuẩn 5 sao ngay tại không gian riêng tư của bạn.</p>
             </div>
-            <div class="border-t border-outline-variant/20 pt-8 text-center flex justify-center items-center">
-                <div class="font-label-sm text-on-surface-variant uppercase tracking-widest">
-                    &copy; 2024 NESTA SPA. TRẢI NGHIỆM LUXURY WELLNESS TẠI GIA.
+            <div class="footer-col">
+                <h4>Thông tin liên hệ</h4>
+                <p><i data-lucide="map-pin" style="display:inline-block; vertical-align:middle; width:16px;"></i> 123 Đường ABC, Quận XYZ, TP.HCM</p>
+                <p><i data-lucide="phone" style="display:inline-block; vertical-align:middle; width:16px;"></i> Hotline: 0909 123 456</p>
+                <p><i data-lucide="mail" style="display:inline-block; vertical-align:middle; width:16px;"></i> Email: contact@nestaspa.com</p>
+                <p><i data-lucide="clock" style="display:inline-block; vertical-align:middle; width:16px;"></i> Giờ mở cửa: 09:00 - 21:00</p>
+            </div>
+            <div class="footer-col">
+                <h4>Liên kết</h4>
+                <ul>
+                    <li><a href="trangchu.html">Trang chủ</a></li>
+                    <li><a href="banggia.html">Bảng giá</a></li>
+                    <li><a href="quytrinh.html">Quy trình</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Dịch vụ</h4>
+                <ul>
+                    <li><a href="chitietdichvu.html?s=nesta-signature">Nesta Signature Stone</a></li>
+                    <li><a href="chitietdichvu.html?s=aromatherapy">Botanical Aromatherapy</a></li>
+                    <li><a href="chitietdichvu.html?s=luminous-facial">Luminous Facial</a></li>
+                    <li><a href="dichvu.html">Tất cả dịch vụ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Fanpage</h4>
+                <div style="background:#222; padding:20px; border-radius:10px; text-align:center;">
+                    <p style="color: white; font-weight: bold; margin-bottom: 12px;">Nesta Spa Fanpage</p>
+                    <a href="#" class="btn btn-outline" style="color:white; border-color:white; margin-top:10px;"><i data-lucide="facebook"></i> Theo dõi</a>
                 </div>
             </div>
         </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NESTA SPA. TRẢI NGHIỆM LUXURY WELLNESS TẠI GIA.</p>
+        </div>
     </footer>
-<script src="assets/js/main.js"></script>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <a href="tel:0909123456" class="btn-float btn-phone">
+            <i data-lucide="phone"></i>
+        </a>
+        <a href="https://zalo.me/0909123456" class="btn-float btn-zalo" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M21.05 12A9 9 0 0012 3a9 9 0 00-9 9c0 2.25.83 4.3 2.21 5.86L4 21l3.32-1.07A8.96 8.96 0 0012 21a9 9 0 009.05-9z" fill="white"/></svg>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('open');
+        });
+    </script>
 </body>
-
 </html>
-
-
-
-
-
